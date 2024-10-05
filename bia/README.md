@@ -1,1 +1,1 @@
-# The basics of artificial intelligence
+# Basics of artificial intelligence
