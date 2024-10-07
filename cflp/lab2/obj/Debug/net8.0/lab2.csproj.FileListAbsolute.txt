@@ -1,0 +1,15 @@
+/Users/razvybitea/Faculty-3rd-year/cflp/lab2/obj/Debug/net8.0/lab2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/razvybitea/Faculty-3rd-year/cflp/lab2/obj/Debug/net8.0/lab2.AssemblyInfoInputs.cache
+/Users/razvybitea/Faculty-3rd-year/cflp/lab2/obj/Debug/net8.0/lab2.AssemblyInfo.cs
+/Users/razvybitea/Faculty-3rd-year/cflp/lab2/obj/Debug/net8.0/lab2.csproj.CoreCompileInputs.cache
+/Users/razvybitea/Faculty-3rd-year/cflp/lab2/obj/Debug/net8.0/lab2.sourcelink.json
+/Users/razvybitea/Faculty-3rd-year/cflp/lab2/bin/Debug/net8.0/lab2
+/Users/razvybitea/Faculty-3rd-year/cflp/lab2/bin/Debug/net8.0/lab2.deps.json
+/Users/razvybitea/Faculty-3rd-year/cflp/lab2/bin/Debug/net8.0/lab2.runtimeconfig.json
+/Users/razvybitea/Faculty-3rd-year/cflp/lab2/bin/Debug/net8.0/lab2.dll
+/Users/razvybitea/Faculty-3rd-year/cflp/lab2/bin/Debug/net8.0/lab2.pdb
+/Users/razvybitea/Faculty-3rd-year/cflp/lab2/obj/Debug/net8.0/lab2.dll
+/Users/razvybitea/Faculty-3rd-year/cflp/lab2/obj/Debug/net8.0/refint/lab2.dll
+/Users/razvybitea/Faculty-3rd-year/cflp/lab2/obj/Debug/net8.0/lab2.pdb
+/Users/razvybitea/Faculty-3rd-year/cflp/lab2/obj/Debug/net8.0/lab2.genruntimeconfig.cache
+/Users/razvybitea/Faculty-3rd-year/cflp/lab2/obj/Debug/net8.0/ref/lab2.dll
