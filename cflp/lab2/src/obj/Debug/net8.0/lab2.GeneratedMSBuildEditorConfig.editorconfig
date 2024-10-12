@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = lab2
-build_property.ProjectDir = /Users/razvybitea/Faculty-3rd-year/cflp/lab2/
+build_property.ProjectDir = /Users/razvybitea/Faculty-3rd-year/cflp/lab2/src/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
