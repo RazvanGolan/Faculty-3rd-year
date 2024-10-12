@@ -2,4 +2,6 @@
 Basics of python and Numpy
 
 ## Requirements
-![requiremnts](requirements.png)
+<p align="center">
+    <img src="requirements.png">
+</p>
