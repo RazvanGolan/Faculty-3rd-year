@@ -1,6 +1,6 @@
 # Lab 2
 
-Linear regression
+Parametric models
 
 ## Requirements
 <p align="center">
