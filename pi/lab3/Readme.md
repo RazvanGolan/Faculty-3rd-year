@@ -1,6 +1,6 @@
 # Lab 3
 
-Multilayer perceptrons
+Linear regression and Multilayer perceptrons in PyTorch
 
 ## Requirements
 <p align="center">
