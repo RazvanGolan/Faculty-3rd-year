@@ -1,4 +1,4 @@
-# AgențieImobiliară Class
+# RealEstateAgency Class
 
 ## Description
 
