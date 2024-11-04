@@ -1,3 +1,6 @@
+# Lab 5
+Arrays, collections and iterators
+
 # Exercises
 
 1. Implement a static method RemoveAt, which receives as parameters an array, the length of the array and an index. The method removes from the array the element from the received index.
