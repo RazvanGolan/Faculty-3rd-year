@@ -2,7 +2,7 @@ namespace lab8;
 
 public class InputReader
 {
-    public event EventHandler<KeyboardInputEventArgs> OnKeyPressed;
+    public event EventHandler<KeyboardInputEventArgs>? OnKeyPressed;
 
     public void ReadKeys()
     {
