@@ -1,3 +1,6 @@
 [submodule "cflp/project"]
 	path = cflp/project
 	url = https://github.com/RazvanGolan/RomanMathOperations.git
+[submodule "pdss/project"]
+	path = pdss/project
+	url = https://github.com/RazvanGolan/GuessIt
