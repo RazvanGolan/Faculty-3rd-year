@@ -1,0 +1,49 @@
+# Build directories
+cmake-build-*/
+build/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Compiled files
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dll
+*.dylib
+
+# Generated files
+*.i
+*.ii
+*.s
+*.d
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Project specific
+testlex
+main
+
+# Dependency directories
+_deps/
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
