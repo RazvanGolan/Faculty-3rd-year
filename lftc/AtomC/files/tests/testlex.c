@@ -10,7 +10,7 @@
 
 int main()
 {
-    const char *fileName = "/Users/razvybitea/Faculty-3rd-year/lftc/AtomC/files/tests/atom-list.txt";
+    const char *fileName = "/Users/razvybitea/Faculty-3rd-year/lftc/AtomC/files/tests/test.c";
     char *buf = loadFile(fileName);
 
     const Token *tokens = tokenize(buf);

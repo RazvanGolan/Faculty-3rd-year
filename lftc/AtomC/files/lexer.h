@@ -3,12 +3,17 @@
 enum
 {
     ID
-    // keywords
-    , TYPE_CHAR
-    // delimiters
-    , COMMA, END
-    // operators
-    , ASSIGN, EQUAL
+    // Constants
+    , INT, DOUBLE, CHAR, STRING
+
+    // Keywords
+    , TYPE_CHAR, TYPE_DOUBLE, ELSE, IF, TYPE_INT, RETURN, STRUCT, VOID, WHILE
+
+    // Delimiters
+    , COMMA, SEMICOLON, LPAR, RPAR, LBRACKET, RBRACKET, LACC, RACC, END
+
+    // Operators
+    , ADD, SUB, MUL, DIV, DOT, AND, OR, NOT, ASSIGN, EQUAL, NOTEQ, LESS, LESSEQ, GREATER, GREATEREQ
 };
 
 typedef struct Token
