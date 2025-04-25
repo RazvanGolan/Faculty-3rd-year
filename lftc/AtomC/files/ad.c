@@ -96,7 +96,7 @@ void freeSymbol(Symbol *s){
 			if(!s->owner)free(s->varMem);
 			break;
 		case SK_PARAM:
-			// DO nothing
+			// Parameters are cleaned up by their owner
 			break;
 		case SK_FN:
 			freeSymbols(s->fn.params);

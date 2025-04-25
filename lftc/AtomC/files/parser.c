@@ -15,6 +15,10 @@ FILE *parser_log_fp = NULL;
 // Global pointer to the current owner symbol (function or struct)
 Symbol *owner = NULL;
 
+// Main token iterator and last consumed token
+Token *iTk;		// current token being processed
+Token *consumedTk;		// most recently consumed token
+
 // Function to initialize the parser log file
 void initParserLog() {
     parser_log_fp = fopen("AtomC/optional_logging/parser.txt", "w");
@@ -84,30 +88,27 @@ void rule_end(const char *ruleName, bool success) {
     if (parser_log_fp) fprintf(parser_log_fp, "Exit %s (%s)\n", ruleName, success ? "OK" : "FAIL");
 }
 
-Token *iTk;		// the iterator in the tokens list
-Token *consumedTk;		// the last consumed token
-
-// Error reporting function
+// Error reporting function with line number
 void tkerr(const char *fmt,...){
-	fprintf(stderr,"error in line %d: ",iTk->line);
-	va_list va;
-	va_start(va,fmt);
-	vfprintf(stderr,fmt,va);
-	va_end(va);
+	fprintf(stderr,"Error at line %d: ",iTk->line);
+	va_list args;
+	va_start(args,fmt);
+	vfprintf(stderr,fmt,args);
+	va_end(args);
 	fprintf(stderr,"\n");
 	exit(EXIT_FAILURE);
-	}
+}
 
-// Consumes the next token if it matches the expected code
+// Try to consume a token of specified type
 bool consume(int code){
-    if (parser_log_fp) fprintf(parser_log_fp, "consume(%s)", tkCodeName(code));  // optional logging
+    if (parser_log_fp) fprintf(parser_log_fp, "Attempting to consume(%s)", tkCodeName(code));
     if(iTk->code==code){
         consumedTk=iTk;
         iTk=iTk->next;
-        if (parser_log_fp) fprintf(parser_log_fp, " => consumed\n");  // optional logging
+        if (parser_log_fp) fprintf(parser_log_fp, " => success\n");
         return true;
     }
-    if (parser_log_fp) fprintf(parser_log_fp, " => found %s\n", tkCodeName(iTk->code));  // optional logging
+    if (parser_log_fp) fprintf(parser_log_fp, " => found %s\n", tkCodeName(iTk->code));
     return false;
 }
 
@@ -140,7 +141,7 @@ bool typeBase(Type *t){
 		return true;
 	}
 	if(consume(STRUCT)){
-        if(consume(ID)){
+        if (consume(ID)) {
             Token *tkName = consumedTk; // Keep track of the ID token
             t->tb = TB_STRUCT;
             // Find the struct definition globally
@@ -188,68 +189,62 @@ bool arrayDecl(Type *t) {
 // varDef: typeBase ID arrayDecl? SEMICOLON
 bool varDef() {
     rule_start("varDef");
-    Token *start = iTk;
-    Type t; 
+    Token *initialToken = iTk;
+    Type varType; 
 
-    if (typeBase(&t)) { 
+    if (typeBase(&varType)) { 
         if (consume(ID)) {
-            Token *tkName = consumedTk;      
-            arrayDecl(&t);
+            Token *nameToken = consumedTk;      
+            arrayDecl(&varType);
 
-            if (t.n == 0) {
-                 tkerr("a vector variable must have a specified dimension: %s[]", tkName->text);
+            if (varType.n == 0) {
+                 tkerr("Array size must be specified: %s[]", nameToken->text);
             }
 
-            Symbol *var = findSymbolInDomain(symTable, tkName->text);
-            if (var) {
-                tkerr("symbol redefinition: %s", tkName->text);
+            Symbol *newVar = findSymbolInDomain(symTable, nameToken->text);
+            if (newVar) {
+                tkerr("Duplicate symbol: %s", nameToken->text);
             }
 
-            var = newSymbol(tkName->text, SK_VAR);
-            var->type = t; 
-            var->owner = owner; 
-            addSymbolToDomain(symTable, var); 
+            newVar = newSymbol(nameToken->text, SK_VAR);
+            newVar->type = varType; 
+            newVar->owner = owner; 
+            addSymbolToDomain(symTable, newVar); 
 
             if (owner) {
                 switch (owner->kind) {
                     case SK_FN:
-
-                        var->varIdx = symbolsLen(owner->fn.locals); 
-                        addSymbolToList(&owner->fn.locals, dupSymbol(var)); 
+                        newVar->varIdx = symbolsLen(owner->fn.locals); 
+                        addSymbolToList(&owner->fn.locals, dupSymbol(newVar)); 
                         break;
                     case SK_STRUCT:
-
-                        var->varIdx = typeSize(&owner->type);
-                        addSymbolToList(&owner->structMembers, dupSymbol(var));
+                        newVar->varIdx = typeSize(&owner->type);
+                        addSymbolToList(&owner->structMembers, dupSymbol(newVar));
                         break;
                     default:
-
-                        tkerr("Internal error: Invalid owner kind for variable %s", tkName->text);
+                        tkerr("Invalid owner type for variable %s", nameToken->text);
                         break;
                 }
             } else {
-
-                 if (t.tb == TB_VOID) tkerr("cannot declare variables of type void: %s", tkName->text);
-                 int size = typeSize(&t);
-                 if (size <= 0) tkerr("cannot allocate variable with size <= 0: %s", tkName->text);
-                 var->varMem = safeAlloc(size);
-                 memset(var->varMem, 0, size);
+                 if (varType.tb == TB_VOID) tkerr("Void variables not allowed: %s", nameToken->text);
+                 int memSize = typeSize(&varType);
+                 if (memSize <= 0) tkerr("Invalid memory size for variable: %s", nameToken->text);
+                 newVar->varMem = safeAlloc(memSize);
+                 memset(newVar->varMem, 0, memSize);
             }
-            // --- Domain Analysis End ---
-
 
             if (consume(SEMICOLON)) {
                 rule_end("varDef", true);
                 return true;
             } else {
-                tkerr("missing ; after variable definition for %s", tkName->text);
+                tkerr("Missing semicolon after variable: %s", nameToken->text);
             }
         } else {
-            tkerr("missing identifier in variable definition");
+            tkerr("Missing variable name");
         }
     }
 
-    iTk = start;
+    iTk = initialToken;
     rule_end("varDef", false);
     return false;
 }
@@ -334,15 +329,13 @@ bool fnParam() {
             Token *tkName = consumedTk;
 
             if (arrayDecl(&t)) {
-                 t.n = 0; 
+                t.n = 0; 
             }
-
 
             Symbol *param = findSymbolInDomain(symTable, tkName->text);
             if (param) {
                 tkerr("symbol redefinition: %s", tkName->text);
             }
-
 
             param = newSymbol(tkName->text, SK_PARAM);
             param->type = t; 
@@ -354,7 +347,6 @@ bool fnParam() {
 
             param->paramIdx = symbolsLen(owner->fn.params); 
 
-    
             addSymbolToDomain(symTable, param); 
             addSymbolToList(&owner->fn.params, dupSymbol(param)); 
 
@@ -1004,33 +996,27 @@ bool unit() {
     return false;
 }
 
-// Main parse function
+// Main parsing function
 void parse(Token *tokens) {
-    initParserLog(); // Initialize optional logging
-    initAdLog();     // Initialize domain analysis logging
+    initParserLog();
+    initAdLog();
     iTk = tokens;
 
-    // --- Domain Analysis Setup ---
-    pushDomain(); // Create the global domain
+    // Initialize global scope
+    pushDomain();
 
-    // Call the top-level rule
     if (!unit()) {
-        // Error should have been reported by tkerr, but add a general failure message
-        fprintf(stderr, "Syntax analysis failed.\n");
-        // Optionally log the failure
-        // if (parser_log_fp) fprintf(parser_log_fp, "Syntax analysis failed at top level.\n");
-        dropDomain(); // Clean up global domain even on failure
-        closeAdLog();     // Close domain analysis log on failure
+        fprintf(stderr, "Parsing failed.\n");
+        dropDomain();
+        closeAdLog();
         closeParserLog();
-        exit(EXIT_FAILURE); // Exit on failure
+        exit(EXIT_FAILURE);
     }
 
-    // --- Domain Analysis Teardown & Output ---
-    // Analysis was successful if unit() returned true
-    printf("Domain analysis completed successfully.\n"); // This stays on stdout
-    showDomain(symTable, "global"); // This now writes to ad_log_fp (or stdout)
-    dropDomain(); // Clean up the global domain
+    printf("Parsing completed successfully.\n");
+    showDomain(symTable, "global");
+    dropDomain();
 
-    closeAdLog();     // Close domain analysis log
-    closeParserLog(); // Close optional logging
+    closeAdLog();
+    closeParserLog();
 }
