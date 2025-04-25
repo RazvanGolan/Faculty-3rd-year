@@ -1,43 +1,15 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <limits.h>
-#include <unistd.h>
-#include "../utils.h"
-#include "../lexer.h"
-
-char *getAbsolutePath(const char *relativePath)
-{
-    char cwd[PATH_MAX];
-    if (getcwd(cwd, sizeof(cwd)) != NULL)
-    {
-        chdir("..");
-
-        if (getcwd(cwd, sizeof(cwd)) != NULL)
-        {
-            char *absPath = malloc(PATH_MAX);
-            snprintf(absPath, PATH_MAX, "%s/%s", cwd, relativePath);
-            return absPath;
-        }
-    }
-    perror("getcwd() error");
-    return NULL;
-}
+// program de testare a analizorului lexical, v1.1
 
 int main()
 {
-    const char *relativePath = "AtomC/files/tests/test.c";
-    char *fileName = getAbsolutePath(relativePath);
-    if (fileName == NULL)
-    {
-        return 1;
+    int i;
+    i=0;
+    while(i<10){
+        if(i/2==1)puti(i);
+        i=i+1;
     }
-
-    char *buf = loadFile(fileName);
-    const Token *tokens = tokenize(buf);
-
-    showTokens(tokens);
-
-    free(buf);
-
+    if(4.9==49e-1&&0.49E1==2.45*2.0)puts("yes");
+    putc('#');
+    puts("");	// pentru \n
     return 0;
 }
