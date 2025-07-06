@@ -13,4 +13,10 @@ A brief overview of the subjects:
 - [Image Processing](./pi) – PyTorch
 - [Engineering & Testing of Computing Systems](./itsc) – Studied Assembly and Pipelines
 
+## Second Semester
 
+- [Computer Assisted Graphics](./gac) – Explored Android Studio, rendering techniques, shadows, and 3D object manipulation
+- [Compilation Techniques](./lftc) – Built a compiler from scratch: lexical analysis, parsing, semantic analysis, and code generation
+- [Computer Engineering](./ic) – Developed an online multiplayer song voting web application
+- [Operating System Administration](./aso) – Learned Windows architecture, networking, server administration, and PowerShell
+- Data Exploration – Analyzed and visualized data using modern tools and techniques

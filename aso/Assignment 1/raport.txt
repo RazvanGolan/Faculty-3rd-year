@@ -1,0 +1,25 @@
+Raport despre aplicațiile lansate automat în sistem la pornire
+1. SecurityHealthSystray.exe
+Producător: Microsoft
+Denumire aplicație: SecurityHealthSystray.exe
+Rol în sistem: Această aplicație face parte din sistemul Windows Security și este responsabilă pentru notificările de securitate. Ea ajută utilizatorul să verifice statusul protecției sistemului, precum antivirusul, firewall-ul, protecția malware și altele.
+Risc de securitate: În mod normal, SecurityHealthSystray.exe nu reprezintă un risc de securitate, deoarece face parte din Windows. Totuși, ca orice fișier executabil, poate fi înlocuit de malware, de aceea este important ca fișierul să se afle în locația corectă (în %windir%\system32).
+Știați de ea?: Da, aceasta este o componentă importantă a securității în Windows, bine cunoscută utilizatorilor.
+2. RtkNGUI64.exe
+Producător: Realtek Semiconductor Corp.
+Denumire aplicație: RtkNGUI64.exe
+Rol în sistem: Este un software care face parte din pachetul de drivere audio Realtek HD Audio. Această aplicație gestionează setările audio ale sistemului, oferind utilizatorului acces la opțiuni precum echilibrul sunetului, volum, amplificatorul, și multe altele. Este esențială pentru configurarea dispozitivelor de sunet Realtek.
+Risc de securitate: Riscul de securitate este scăzut, dar orice software de driver poate deveni vulnerabil dacă nu este actualizat corespunzător. Asigură-te că driverele sunt actualizate pentru a evita eventuale exploatarea unor vulnerabilități.
+Știați de ea?: Da, este un proces asociat cu driverele audio Realtek, foarte frecvent pe majoritatea calculatoarelor cu plăci de sunet Realtek.
+3. RAVBg64.exe
+Producător: Realtek Semiconductor Corp.
+Denumire aplicație: RAVBg64.exe
+Rol în sistem: Aceasta este o altă componentă a driverelor audio Realtek, folosită pentru gestionarea setărilor audio avansate, care includ efecte de sunet, moduri de redare și setări pentru diverse dispozitive audio conectate la sistem.
+Risc de securitate: RAVBg64.exe este în general considerat sigur, dar, ca și în cazul oricărei aplicații de sistem, trebuie să vă asigurați că fișierul provine dintr-o sursă legitimă și să verificați actualizările de securitate.
+Știați de ea?: Da, este un proces tipic asociat cu dispozitivele audio Realtek.
+4. WavesSvc64.exe
+Producător: Waves Audio
+Denumire aplicație: WavesSvc64.exe
+Rol în sistem: Este un serviciu asociat cu software-ul Waves Audio, care furnizează procesare audio avansată, de obicei pentru optimizarea și îmbunătățirea calității sunetului pe platforme care utilizează tehnologii audio de înaltă performanță. Acest serviciu este responsabil pentru activarea și gestionarea procesării audio prin Waves Audio.
+Risc de securitate: WavesSvc64.exe în sine nu reprezintă un risc de securitate. Totuși, orice software care controlează sunetul la un nivel avansat trebuie să fie verificat periodic pentru vulnerabilități. Este important să aveți fișierul dintr-o sursă oficială și să-l actualizați.
+Știați de ea?: Este mai puțin cunoscută decât celelalte, dar este folosită frecvent pe laptopuri sau dispozitive care utilizează Waves Audio pentru sunet de calitate superioară.

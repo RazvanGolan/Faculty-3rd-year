@@ -1,0 +1,4 @@
+(1) SecurityHealth -> %windir%\system32\SecurityHealthSystray.exe
+(2) RtHDVCpl -> "C:\Program Files\Realtek\Audio\HDA\RtkNGUI64.exe" /s
+(3) RtHDVBg_PushButton -> "C:\Program Files\Realtek\Audio\HDA\RAVBg64.exe" /IM
+(4) WavesSvc -> "C:\WINDOWS\System32\DriverStore\FileRepository\wavesapo75de.inf_amd64_5ff36f834a6d461a\WavesSvc64.exe" -Jack

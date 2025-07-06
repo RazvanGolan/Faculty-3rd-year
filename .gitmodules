@@ -4,3 +4,6 @@
 [submodule "pdss/project"]
 	path = pdss/project
 	url = https://github.com/RazvanGolan/GuessIt
+[submodule "ic/project"]
+	path = ic/project
+	url = https://github.com/RazvanGolan/VibeCheck.git
