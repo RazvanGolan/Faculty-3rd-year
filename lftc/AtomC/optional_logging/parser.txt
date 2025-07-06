@@ -1,91 +1,5 @@
 Enter unit
 Enter structDef
-Attempting to consume(STRUCT) => found TYPE_INT
-Exit structDef (FAIL)
-Enter fnDef
-Enter typeBase
-Attempting to consume(TYPE_INT) => success
-Exit typeBase (OK)
-Attempting to consume(ID) => success
-Exit fnDef (FAIL)
-Enter varDef
-Enter typeBase
-Attempting to consume(TYPE_INT) => success
-Exit typeBase (OK)
-Attempting to consume(ID) => success
-Enter arrayDecl
-Attempting to consume(LBRACKET) => found SEMICOLON
-Exit arrayDecl (FAIL)
-Attempting to consume(SEMICOLON) => success
-Exit varDef (OK)
-Enter structDef
-Attempting to consume(STRUCT) => found TYPE_CHAR
-Exit structDef (FAIL)
-Enter fnDef
-Enter typeBase
-Attempting to consume(TYPE_INT) => found TYPE_CHAR
-Attempting to consume(TYPE_DOUBLE) => found TYPE_CHAR
-Attempting to consume(TYPE_CHAR) => success
-Exit typeBase (OK)
-Attempting to consume(ID) => success
-Exit fnDef (FAIL)
-Enter varDef
-Enter typeBase
-Attempting to consume(TYPE_INT) => found TYPE_CHAR
-Attempting to consume(TYPE_DOUBLE) => found TYPE_CHAR
-Attempting to consume(TYPE_CHAR) => success
-Exit typeBase (OK)
-Attempting to consume(ID) => success
-Enter arrayDecl
-Attempting to consume(LBRACKET) => found SEMICOLON
-Exit arrayDecl (FAIL)
-Attempting to consume(SEMICOLON) => success
-Exit varDef (OK)
-Enter structDef
-Attempting to consume(STRUCT) => found TYPE_DOUBLE
-Exit structDef (FAIL)
-Enter fnDef
-Enter typeBase
-Attempting to consume(TYPE_INT) => found TYPE_DOUBLE
-Attempting to consume(TYPE_DOUBLE) => success
-Exit typeBase (OK)
-Attempting to consume(ID) => success
-Exit fnDef (FAIL)
-Enter varDef
-Enter typeBase
-Attempting to consume(TYPE_INT) => found TYPE_DOUBLE
-Attempting to consume(TYPE_DOUBLE) => success
-Exit typeBase (OK)
-Attempting to consume(ID) => success
-Enter arrayDecl
-Attempting to consume(LBRACKET) => found SEMICOLON
-Exit arrayDecl (FAIL)
-Attempting to consume(SEMICOLON) => success
-Exit varDef (OK)
-Enter structDef
-Attempting to consume(STRUCT) => found TYPE_DOUBLE
-Exit structDef (FAIL)
-Enter fnDef
-Enter typeBase
-Attempting to consume(TYPE_INT) => found TYPE_DOUBLE
-Attempting to consume(TYPE_DOUBLE) => success
-Exit typeBase (OK)
-Attempting to consume(ID) => success
-Exit fnDef (FAIL)
-Enter varDef
-Enter typeBase
-Attempting to consume(TYPE_INT) => found TYPE_DOUBLE
-Attempting to consume(TYPE_DOUBLE) => success
-Exit typeBase (OK)
-Attempting to consume(ID) => success
-Enter arrayDecl
-Attempting to consume(LBRACKET) => success
-Attempting to consume(INT) => success
-Attempting to consume(RBRACKET) => success
-Exit arrayDecl (OK)
-Attempting to consume(SEMICOLON) => success
-Exit varDef (OK)
-Enter structDef
 Attempting to consume(STRUCT) => success
 Attempting to consume(ID) => success
 Attempting to consume(LACC) => success
@@ -101,22 +15,7 @@ Attempting to consume(SEMICOLON) => success
 Exit varDef (OK)
 Enter varDef
 Enter typeBase
-Attempting to consume(TYPE_INT) => found TYPE_DOUBLE
-Attempting to consume(TYPE_DOUBLE) => success
-Exit typeBase (OK)
-Attempting to consume(ID) => success
-Enter arrayDecl
-Attempting to consume(LBRACKET) => success
-Attempting to consume(INT) => success
-Attempting to consume(RBRACKET) => success
-Exit arrayDecl (OK)
-Attempting to consume(SEMICOLON) => success
-Exit varDef (OK)
-Enter varDef
-Enter typeBase
-Attempting to consume(TYPE_INT) => found TYPE_CHAR
-Attempting to consume(TYPE_DOUBLE) => found TYPE_CHAR
-Attempting to consume(TYPE_CHAR) => success
+Attempting to consume(TYPE_INT) => success
 Exit typeBase (OK)
 Attempting to consume(ID) => success
 Enter arrayDecl
@@ -159,34 +58,6 @@ Attempting to consume(ID) => success
 Exit typeBase (OK)
 Attempting to consume(ID) => success
 Enter arrayDecl
-Attempting to consume(LBRACKET) => found SEMICOLON
-Exit arrayDecl (FAIL)
-Attempting to consume(SEMICOLON) => success
-Exit varDef (OK)
-Enter structDef
-Attempting to consume(STRUCT) => success
-Attempting to consume(ID) => success
-Exit structDef (FAIL)
-Enter fnDef
-Enter typeBase
-Attempting to consume(TYPE_INT) => found STRUCT
-Attempting to consume(TYPE_DOUBLE) => found STRUCT
-Attempting to consume(TYPE_CHAR) => found STRUCT
-Attempting to consume(STRUCT) => success
-Attempting to consume(ID) => success
-Exit typeBase (OK)
-Attempting to consume(ID) => success
-Exit fnDef (FAIL)
-Enter varDef
-Enter typeBase
-Attempting to consume(TYPE_INT) => found STRUCT
-Attempting to consume(TYPE_DOUBLE) => found STRUCT
-Attempting to consume(TYPE_CHAR) => found STRUCT
-Attempting to consume(STRUCT) => success
-Attempting to consume(ID) => success
-Exit typeBase (OK)
-Attempting to consume(ID) => success
-Enter arrayDecl
 Attempting to consume(LBRACKET) => success
 Attempting to consume(INT) => success
 Attempting to consume(RBRACKET) => success
@@ -210,15 +81,14 @@ Attempting to consume(TYPE_DOUBLE) => success
 Exit typeBase (OK)
 Attempting to consume(ID) => success
 Enter arrayDecl
-Attempting to consume(LBRACKET) => success
-Attempting to consume(INT) => success
-Attempting to consume(RBRACKET) => success
-Exit arrayDecl (OK)
+Attempting to consume(LBRACKET) => found COMMA
+Exit arrayDecl (FAIL)
 Exit fnParam (OK)
 Attempting to consume(COMMA) => success
 Enter fnParam
 Enter typeBase
-Attempting to consume(TYPE_INT) => success
+Attempting to consume(TYPE_INT) => found TYPE_DOUBLE
+Attempting to consume(TYPE_DOUBLE) => success
 Exit typeBase (OK)
 Attempting to consume(ID) => success
 Enter arrayDecl
@@ -231,463 +101,17 @@ Enter stmCompound
 Attempting to consume(LACC) => success
 Enter varDef
 Enter typeBase
-Attempting to consume(TYPE_INT) => found TYPE_DOUBLE
-Attempting to consume(TYPE_DOUBLE) => success
-Exit typeBase (OK)
-Attempting to consume(ID) => success
-Enter arrayDecl
-Attempting to consume(LBRACKET) => found SEMICOLON
-Exit arrayDecl (FAIL)
-Attempting to consume(SEMICOLON) => success
-Exit varDef (OK)
-Enter varDef
-Enter typeBase
-Attempting to consume(TYPE_INT) => success
-Exit typeBase (OK)
-Attempting to consume(ID) => success
-Enter arrayDecl
-Attempting to consume(LBRACKET) => found SEMICOLON
-Exit arrayDecl (FAIL)
-Attempting to consume(SEMICOLON) => success
-Exit varDef (OK)
-Enter varDef
-Enter typeBase
-Attempting to consume(TYPE_INT) => found ID
-Attempting to consume(TYPE_DOUBLE) => found ID
-Attempting to consume(TYPE_CHAR) => found ID
-Attempting to consume(STRUCT) => found ID
+Attempting to consume(TYPE_INT) => found IF
+Attempting to consume(TYPE_DOUBLE) => found IF
+Attempting to consume(TYPE_CHAR) => found IF
+Attempting to consume(STRUCT) => found IF
 Exit typeBase (FAIL)
 Exit varDef (FAIL)
 Enter stm
 Enter stmCompound
-Attempting to consume(LACC) => found ID
+Attempting to consume(LACC) => found IF
 Exit stmCompound (FAIL)
-Attempting to consume(IF) => found ID
-Attempting to consume(WHILE) => found ID
-Attempting to consume(RETURN) => found ID
-Enter expr
-Enter exprAssign
-Enter exprOr
-Enter exprAnd
-Enter exprEq
-Enter exprRel
-Enter exprAdd
-Enter exprMul
-Enter exprCast
-Attempting to consume(LPAR) => found ID
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found ASSIGN
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found ASSIGN
-Attempting to consume(DOT) => found ASSIGN
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Exit exprCast (OK)
-Enter exprMulPrim
-Attempting to consume(MUL) => found ASSIGN
-Attempting to consume(DIV) => found ASSIGN
-Exit exprMulPrim (OK)
-Exit exprMul (OK)
-Enter exprAddPrim
-Attempting to consume(ADD) => found ASSIGN
-Attempting to consume(SUB) => found ASSIGN
-Exit exprAddPrim (OK)
-Exit exprAdd (OK)
-Enter exprRelPrim
-Attempting to consume(LESS) => found ASSIGN
-Attempting to consume(LESSEQ) => found ASSIGN
-Attempting to consume(GREATER) => found ASSIGN
-Attempting to consume(GREATEREQ) => found ASSIGN
-Exit exprRelPrim (OK)
-Exit exprRel (OK)
-Enter exprEqPrim
-Attempting to consume(EQUAL) => found ASSIGN
-Attempting to consume(NOTEQ) => found ASSIGN
-Exit exprEqPrim (OK)
-Exit exprEq (OK)
-Enter exprAndPrim
-Attempting to consume(AND) => found ASSIGN
-Exit exprAndPrim (OK)
-Exit exprAnd (OK)
-Enter exprOrPrim
-Attempting to consume(OR) => found ASSIGN
-Exit exprOrPrim (OK)
-Exit exprOr (OK)
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found ASSIGN
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found ASSIGN
-Attempting to consume(DOT) => found ASSIGN
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Attempting to consume(ASSIGN) => success
-Enter exprAssign
-Enter exprOr
-Enter exprAnd
-Enter exprEq
-Enter exprRel
-Enter exprAdd
-Enter exprMul
-Enter exprCast
-Attempting to consume(LPAR) => found INT
-Enter exprUnary
-Attempting to consume(SUB) => found INT
-Attempting to consume(NOT) => found INT
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => found INT
-Attempting to consume(INT) => success
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found SEMICOLON
-Attempting to consume(DOT) => found SEMICOLON
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Exit exprCast (OK)
-Enter exprMulPrim
-Attempting to consume(MUL) => found SEMICOLON
-Attempting to consume(DIV) => found SEMICOLON
-Exit exprMulPrim (OK)
-Exit exprMul (OK)
-Enter exprAddPrim
-Attempting to consume(ADD) => found SEMICOLON
-Attempting to consume(SUB) => found SEMICOLON
-Exit exprAddPrim (OK)
-Exit exprAdd (OK)
-Enter exprRelPrim
-Attempting to consume(LESS) => found SEMICOLON
-Attempting to consume(LESSEQ) => found SEMICOLON
-Attempting to consume(GREATER) => found SEMICOLON
-Attempting to consume(GREATEREQ) => found SEMICOLON
-Exit exprRelPrim (OK)
-Exit exprRel (OK)
-Enter exprEqPrim
-Attempting to consume(EQUAL) => found SEMICOLON
-Attempting to consume(NOTEQ) => found SEMICOLON
-Exit exprEqPrim (OK)
-Exit exprEq (OK)
-Enter exprAndPrim
-Attempting to consume(AND) => found SEMICOLON
-Exit exprAndPrim (OK)
-Exit exprAnd (OK)
-Enter exprOrPrim
-Attempting to consume(OR) => found SEMICOLON
-Exit exprOrPrim (OK)
-Exit exprOr (OK)
-Enter exprUnary
-Attempting to consume(SUB) => found INT
-Attempting to consume(NOT) => found INT
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => found INT
-Attempting to consume(INT) => success
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found SEMICOLON
-Attempting to consume(DOT) => found SEMICOLON
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Attempting to consume(ASSIGN) => found SEMICOLON
-Enter exprOr
-Enter exprAnd
-Enter exprEq
-Enter exprRel
-Enter exprAdd
-Enter exprMul
-Enter exprCast
-Attempting to consume(LPAR) => found INT
-Enter exprUnary
-Attempting to consume(SUB) => found INT
-Attempting to consume(NOT) => found INT
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => found INT
-Attempting to consume(INT) => success
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found SEMICOLON
-Attempting to consume(DOT) => found SEMICOLON
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Exit exprCast (OK)
-Enter exprMulPrim
-Attempting to consume(MUL) => found SEMICOLON
-Attempting to consume(DIV) => found SEMICOLON
-Exit exprMulPrim (OK)
-Exit exprMul (OK)
-Enter exprAddPrim
-Attempting to consume(ADD) => found SEMICOLON
-Attempting to consume(SUB) => found SEMICOLON
-Exit exprAddPrim (OK)
-Exit exprAdd (OK)
-Enter exprRelPrim
-Attempting to consume(LESS) => found SEMICOLON
-Attempting to consume(LESSEQ) => found SEMICOLON
-Attempting to consume(GREATER) => found SEMICOLON
-Attempting to consume(GREATEREQ) => found SEMICOLON
-Exit exprRelPrim (OK)
-Exit exprRel (OK)
-Enter exprEqPrim
-Attempting to consume(EQUAL) => found SEMICOLON
-Attempting to consume(NOTEQ) => found SEMICOLON
-Exit exprEqPrim (OK)
-Exit exprEq (OK)
-Enter exprAndPrim
-Attempting to consume(AND) => found SEMICOLON
-Exit exprAndPrim (OK)
-Exit exprAnd (OK)
-Enter exprOrPrim
-Attempting to consume(OR) => found SEMICOLON
-Exit exprOrPrim (OK)
-Exit exprOr (OK)
-Exit exprAssign (OK)
-Exit exprAssign (OK)
-Exit expr (OK)
-Attempting to consume(SEMICOLON) => success
-Exit stm (OK)
-Enter varDef
-Enter typeBase
-Attempting to consume(TYPE_INT) => found ID
-Attempting to consume(TYPE_DOUBLE) => found ID
-Attempting to consume(TYPE_CHAR) => found ID
-Attempting to consume(STRUCT) => found ID
-Exit typeBase (FAIL)
-Exit varDef (FAIL)
-Enter stm
-Enter stmCompound
-Attempting to consume(LACC) => found ID
-Exit stmCompound (FAIL)
-Attempting to consume(IF) => found ID
-Attempting to consume(WHILE) => found ID
-Attempting to consume(RETURN) => found ID
-Enter expr
-Enter exprAssign
-Enter exprOr
-Enter exprAnd
-Enter exprEq
-Enter exprRel
-Enter exprAdd
-Enter exprMul
-Enter exprCast
-Attempting to consume(LPAR) => found ID
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found ASSIGN
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found ASSIGN
-Attempting to consume(DOT) => found ASSIGN
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Exit exprCast (OK)
-Enter exprMulPrim
-Attempting to consume(MUL) => found ASSIGN
-Attempting to consume(DIV) => found ASSIGN
-Exit exprMulPrim (OK)
-Exit exprMul (OK)
-Enter exprAddPrim
-Attempting to consume(ADD) => found ASSIGN
-Attempting to consume(SUB) => found ASSIGN
-Exit exprAddPrim (OK)
-Exit exprAdd (OK)
-Enter exprRelPrim
-Attempting to consume(LESS) => found ASSIGN
-Attempting to consume(LESSEQ) => found ASSIGN
-Attempting to consume(GREATER) => found ASSIGN
-Attempting to consume(GREATEREQ) => found ASSIGN
-Exit exprRelPrim (OK)
-Exit exprRel (OK)
-Enter exprEqPrim
-Attempting to consume(EQUAL) => found ASSIGN
-Attempting to consume(NOTEQ) => found ASSIGN
-Exit exprEqPrim (OK)
-Exit exprEq (OK)
-Enter exprAndPrim
-Attempting to consume(AND) => found ASSIGN
-Exit exprAndPrim (OK)
-Exit exprAnd (OK)
-Enter exprOrPrim
-Attempting to consume(OR) => found ASSIGN
-Exit exprOrPrim (OK)
-Exit exprOr (OK)
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found ASSIGN
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found ASSIGN
-Attempting to consume(DOT) => found ASSIGN
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Attempting to consume(ASSIGN) => success
-Enter exprAssign
-Enter exprOr
-Enter exprAnd
-Enter exprEq
-Enter exprRel
-Enter exprAdd
-Enter exprMul
-Enter exprCast
-Attempting to consume(LPAR) => found INT
-Enter exprUnary
-Attempting to consume(SUB) => found INT
-Attempting to consume(NOT) => found INT
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => found INT
-Attempting to consume(INT) => success
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found SEMICOLON
-Attempting to consume(DOT) => found SEMICOLON
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Exit exprCast (OK)
-Enter exprMulPrim
-Attempting to consume(MUL) => found SEMICOLON
-Attempting to consume(DIV) => found SEMICOLON
-Exit exprMulPrim (OK)
-Exit exprMul (OK)
-Enter exprAddPrim
-Attempting to consume(ADD) => found SEMICOLON
-Attempting to consume(SUB) => found SEMICOLON
-Exit exprAddPrim (OK)
-Exit exprAdd (OK)
-Enter exprRelPrim
-Attempting to consume(LESS) => found SEMICOLON
-Attempting to consume(LESSEQ) => found SEMICOLON
-Attempting to consume(GREATER) => found SEMICOLON
-Attempting to consume(GREATEREQ) => found SEMICOLON
-Exit exprRelPrim (OK)
-Exit exprRel (OK)
-Enter exprEqPrim
-Attempting to consume(EQUAL) => found SEMICOLON
-Attempting to consume(NOTEQ) => found SEMICOLON
-Exit exprEqPrim (OK)
-Exit exprEq (OK)
-Enter exprAndPrim
-Attempting to consume(AND) => found SEMICOLON
-Exit exprAndPrim (OK)
-Exit exprAnd (OK)
-Enter exprOrPrim
-Attempting to consume(OR) => found SEMICOLON
-Exit exprOrPrim (OK)
-Exit exprOr (OK)
-Enter exprUnary
-Attempting to consume(SUB) => found INT
-Attempting to consume(NOT) => found INT
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => found INT
-Attempting to consume(INT) => success
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found SEMICOLON
-Attempting to consume(DOT) => found SEMICOLON
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Attempting to consume(ASSIGN) => found SEMICOLON
-Enter exprOr
-Enter exprAnd
-Enter exprEq
-Enter exprRel
-Enter exprAdd
-Enter exprMul
-Enter exprCast
-Attempting to consume(LPAR) => found INT
-Enter exprUnary
-Attempting to consume(SUB) => found INT
-Attempting to consume(NOT) => found INT
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => found INT
-Attempting to consume(INT) => success
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found SEMICOLON
-Attempting to consume(DOT) => found SEMICOLON
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Exit exprCast (OK)
-Enter exprMulPrim
-Attempting to consume(MUL) => found SEMICOLON
-Attempting to consume(DIV) => found SEMICOLON
-Exit exprMulPrim (OK)
-Exit exprMul (OK)
-Enter exprAddPrim
-Attempting to consume(ADD) => found SEMICOLON
-Attempting to consume(SUB) => found SEMICOLON
-Exit exprAddPrim (OK)
-Exit exprAdd (OK)
-Enter exprRelPrim
-Attempting to consume(LESS) => found SEMICOLON
-Attempting to consume(LESSEQ) => found SEMICOLON
-Attempting to consume(GREATER) => found SEMICOLON
-Attempting to consume(GREATEREQ) => found SEMICOLON
-Exit exprRelPrim (OK)
-Exit exprRel (OK)
-Enter exprEqPrim
-Attempting to consume(EQUAL) => found SEMICOLON
-Attempting to consume(NOTEQ) => found SEMICOLON
-Exit exprEqPrim (OK)
-Exit exprEq (OK)
-Enter exprAndPrim
-Attempting to consume(AND) => found SEMICOLON
-Exit exprAndPrim (OK)
-Exit exprAnd (OK)
-Enter exprOrPrim
-Attempting to consume(OR) => found SEMICOLON
-Exit exprOrPrim (OK)
-Exit exprOr (OK)
-Exit exprAssign (OK)
-Exit exprAssign (OK)
-Exit expr (OK)
-Attempting to consume(SEMICOLON) => success
-Exit stm (OK)
-Enter varDef
-Enter typeBase
-Attempting to consume(TYPE_INT) => found WHILE
-Attempting to consume(TYPE_DOUBLE) => found WHILE
-Attempting to consume(TYPE_CHAR) => found WHILE
-Attempting to consume(STRUCT) => found WHILE
-Exit typeBase (FAIL)
-Exit varDef (FAIL)
-Enter stm
-Enter stmCompound
-Attempting to consume(LACC) => found WHILE
-Exit stmCompound (FAIL)
-Attempting to consume(IF) => found WHILE
-Attempting to consume(WHILE) => success
+Attempting to consume(IF) => success
 Attempting to consume(LPAR) => success
 Enter expr
 Enter exprAssign
@@ -705,27 +129,31 @@ Attempting to consume(NOT) => found ID
 Enter exprPostfix
 Enter exprPrimary
 Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found LESS
+Attempting to consume(LPAR) => found LESSEQ
 Exit exprPrimary (OK)
 Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found LESS
-Attempting to consume(DOT) => found LESS
+Attempting to consume(LBRACKET) => found LESSEQ
+Attempting to consume(DOT) => found LESSEQ
 Exit exprPostfixPrim (OK)
 Exit exprPostfix (OK)
 Exit exprUnary (OK)
 Exit exprCast (OK)
 Enter exprMulPrim
-Attempting to consume(MUL) => found LESS
-Attempting to consume(DIV) => found LESS
+Attempting to consume(MUL) => found LESSEQ
+Attempting to consume(DIV) => found LESSEQ
 Exit exprMulPrim (OK)
 Exit exprMul (OK)
 Enter exprAddPrim
-Attempting to consume(ADD) => found LESS
-Attempting to consume(SUB) => found LESS
+Attempting to consume(ADD) => found LESSEQ
+Attempting to consume(SUB) => found LESSEQ
+Attempting to consume(ADD) => found LESSEQ
+Attempting to consume(SUB) => found LESSEQ
+Attempting to consume(SUB) => found LESSEQ
 Exit exprAddPrim (OK)
 Exit exprAdd (OK)
 Enter exprRelPrim
-Attempting to consume(LESS) => success
+Attempting to consume(LESS) => found LESSEQ
+Attempting to consume(LESSEQ) => success
 Enter exprAdd
 Enter exprMul
 Enter exprCast
@@ -752,6 +180,9 @@ Exit exprMulPrim (OK)
 Exit exprMul (OK)
 Enter exprAddPrim
 Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
+Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
 Attempting to consume(SUB) => found RPAR
 Exit exprAddPrim (OK)
 Exit exprAdd (OK)
@@ -782,15 +213,15 @@ Attempting to consume(NOT) => found ID
 Enter exprPostfix
 Enter exprPrimary
 Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found LESS
+Attempting to consume(LPAR) => found LESSEQ
 Exit exprPrimary (OK)
 Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found LESS
-Attempting to consume(DOT) => found LESS
+Attempting to consume(LBRACKET) => found LESSEQ
+Attempting to consume(DOT) => found LESSEQ
 Exit exprPostfixPrim (OK)
 Exit exprPostfix (OK)
 Exit exprUnary (OK)
-Attempting to consume(ASSIGN) => found LESS
+Attempting to consume(ASSIGN) => found LESSEQ
 Enter exprOr
 Enter exprAnd
 Enter exprEq
@@ -805,27 +236,31 @@ Attempting to consume(NOT) => found ID
 Enter exprPostfix
 Enter exprPrimary
 Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found LESS
+Attempting to consume(LPAR) => found LESSEQ
 Exit exprPrimary (OK)
 Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found LESS
-Attempting to consume(DOT) => found LESS
+Attempting to consume(LBRACKET) => found LESSEQ
+Attempting to consume(DOT) => found LESSEQ
 Exit exprPostfixPrim (OK)
 Exit exprPostfix (OK)
 Exit exprUnary (OK)
 Exit exprCast (OK)
 Enter exprMulPrim
-Attempting to consume(MUL) => found LESS
-Attempting to consume(DIV) => found LESS
+Attempting to consume(MUL) => found LESSEQ
+Attempting to consume(DIV) => found LESSEQ
 Exit exprMulPrim (OK)
 Exit exprMul (OK)
 Enter exprAddPrim
-Attempting to consume(ADD) => found LESS
-Attempting to consume(SUB) => found LESS
+Attempting to consume(ADD) => found LESSEQ
+Attempting to consume(SUB) => found LESSEQ
+Attempting to consume(ADD) => found LESSEQ
+Attempting to consume(SUB) => found LESSEQ
+Attempting to consume(SUB) => found LESSEQ
 Exit exprAddPrim (OK)
 Exit exprAdd (OK)
 Enter exprRelPrim
-Attempting to consume(LESS) => success
+Attempting to consume(LESS) => found LESSEQ
+Attempting to consume(LESSEQ) => success
 Enter exprAdd
 Enter exprMul
 Enter exprCast
@@ -852,6 +287,9 @@ Exit exprMulPrim (OK)
 Exit exprMul (OK)
 Enter exprAddPrim
 Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
+Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
 Attempting to consume(SUB) => found RPAR
 Exit exprAddPrim (OK)
 Exit exprAdd (OK)
@@ -881,33 +319,11 @@ Exit expr (OK)
 Attempting to consume(RPAR) => success
 Enter stm
 Enter stmCompound
-Attempting to consume(LACC) => success
-Enter varDef
-Enter typeBase
-Attempting to consume(TYPE_INT) => found TYPE_DOUBLE
-Attempting to consume(TYPE_DOUBLE) => success
-Exit typeBase (OK)
-Attempting to consume(ID) => success
-Enter arrayDecl
-Attempting to consume(LBRACKET) => found SEMICOLON
-Exit arrayDecl (FAIL)
-Attempting to consume(SEMICOLON) => success
-Exit varDef (OK)
-Enter varDef
-Enter typeBase
-Attempting to consume(TYPE_INT) => found ID
-Attempting to consume(TYPE_DOUBLE) => found ID
-Attempting to consume(TYPE_CHAR) => found ID
-Attempting to consume(STRUCT) => found ID
-Exit typeBase (FAIL)
-Exit varDef (FAIL)
-Enter stm
-Enter stmCompound
-Attempting to consume(LACC) => found ID
+Attempting to consume(LACC) => found RETURN
 Exit stmCompound (FAIL)
-Attempting to consume(IF) => found ID
-Attempting to consume(WHILE) => found ID
-Attempting to consume(RETURN) => found ID
+Attempting to consume(IF) => found RETURN
+Attempting to consume(WHILE) => found RETURN
+Attempting to consume(RETURN) => success
 Enter expr
 Enter exprAssign
 Enter exprOr
@@ -924,209 +340,11 @@ Attempting to consume(NOT) => found ID
 Enter exprPostfix
 Enter exprPrimary
 Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found ASSIGN
+Attempting to consume(LPAR) => found SEMICOLON
 Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found ASSIGN
-Attempting to consume(DOT) => found ASSIGN
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Exit exprCast (OK)
-Enter exprMulPrim
-Attempting to consume(MUL) => found ASSIGN
-Attempting to consume(DIV) => found ASSIGN
-Exit exprMulPrim (OK)
-Exit exprMul (OK)
-Enter exprAddPrim
-Attempting to consume(ADD) => found ASSIGN
-Attempting to consume(SUB) => found ASSIGN
-Exit exprAddPrim (OK)
-Exit exprAdd (OK)
-Enter exprRelPrim
-Attempting to consume(LESS) => found ASSIGN
-Attempting to consume(LESSEQ) => found ASSIGN
-Attempting to consume(GREATER) => found ASSIGN
-Attempting to consume(GREATEREQ) => found ASSIGN
-Exit exprRelPrim (OK)
-Exit exprRel (OK)
-Enter exprEqPrim
-Attempting to consume(EQUAL) => found ASSIGN
-Attempting to consume(NOTEQ) => found ASSIGN
-Exit exprEqPrim (OK)
-Exit exprEq (OK)
-Enter exprAndPrim
-Attempting to consume(AND) => found ASSIGN
-Exit exprAndPrim (OK)
-Exit exprAnd (OK)
-Enter exprOrPrim
-Attempting to consume(OR) => found ASSIGN
-Exit exprOrPrim (OK)
-Exit exprOr (OK)
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found ASSIGN
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found ASSIGN
-Attempting to consume(DOT) => found ASSIGN
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Attempting to consume(ASSIGN) => success
-Enter exprAssign
-Enter exprOr
-Enter exprAnd
-Enter exprEq
-Enter exprRel
-Enter exprAdd
-Enter exprMul
-Enter exprCast
-Attempting to consume(LPAR) => found ID
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found LBRACKET
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => success
-Enter expr
-Enter exprAssign
-Enter exprOr
-Enter exprAnd
-Enter exprEq
-Enter exprRel
-Enter exprAdd
-Enter exprMul
-Enter exprCast
-Attempting to consume(LPAR) => found ID
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found RBRACKET
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found RBRACKET
-Attempting to consume(DOT) => found RBRACKET
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Exit exprCast (OK)
-Enter exprMulPrim
-Attempting to consume(MUL) => found RBRACKET
-Attempting to consume(DIV) => found RBRACKET
-Exit exprMulPrim (OK)
-Exit exprMul (OK)
-Enter exprAddPrim
-Attempting to consume(ADD) => found RBRACKET
-Attempting to consume(SUB) => found RBRACKET
-Exit exprAddPrim (OK)
-Exit exprAdd (OK)
-Enter exprRelPrim
-Attempting to consume(LESS) => found RBRACKET
-Attempting to consume(LESSEQ) => found RBRACKET
-Attempting to consume(GREATER) => found RBRACKET
-Attempting to consume(GREATEREQ) => found RBRACKET
-Exit exprRelPrim (OK)
-Exit exprRel (OK)
-Enter exprEqPrim
-Attempting to consume(EQUAL) => found RBRACKET
-Attempting to consume(NOTEQ) => found RBRACKET
-Exit exprEqPrim (OK)
-Exit exprEq (OK)
-Enter exprAndPrim
-Attempting to consume(AND) => found RBRACKET
-Exit exprAndPrim (OK)
-Exit exprAnd (OK)
-Enter exprOrPrim
-Attempting to consume(OR) => found RBRACKET
-Exit exprOrPrim (OK)
-Exit exprOr (OK)
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found RBRACKET
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found RBRACKET
-Attempting to consume(DOT) => found RBRACKET
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Attempting to consume(ASSIGN) => found RBRACKET
-Enter exprOr
-Enter exprAnd
-Enter exprEq
-Enter exprRel
-Enter exprAdd
-Enter exprMul
-Enter exprCast
-Attempting to consume(LPAR) => found ID
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found RBRACKET
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found RBRACKET
-Attempting to consume(DOT) => found RBRACKET
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Exit exprCast (OK)
-Enter exprMulPrim
-Attempting to consume(MUL) => found RBRACKET
-Attempting to consume(DIV) => found RBRACKET
-Exit exprMulPrim (OK)
-Exit exprMul (OK)
-Enter exprAddPrim
-Attempting to consume(ADD) => found RBRACKET
-Attempting to consume(SUB) => found RBRACKET
-Exit exprAddPrim (OK)
-Exit exprAdd (OK)
-Enter exprRelPrim
-Attempting to consume(LESS) => found RBRACKET
-Attempting to consume(LESSEQ) => found RBRACKET
-Attempting to consume(GREATER) => found RBRACKET
-Attempting to consume(GREATEREQ) => found RBRACKET
-Exit exprRelPrim (OK)
-Exit exprRel (OK)
-Enter exprEqPrim
-Attempting to consume(EQUAL) => found RBRACKET
-Attempting to consume(NOTEQ) => found RBRACKET
-Exit exprEqPrim (OK)
-Exit exprEq (OK)
-Enter exprAndPrim
-Attempting to consume(AND) => found RBRACKET
-Exit exprAndPrim (OK)
-Exit exprAnd (OK)
-Enter exprOrPrim
-Attempting to consume(OR) => found RBRACKET
-Exit exprOrPrim (OK)
-Exit exprOr (OK)
-Exit exprAssign (OK)
-Exit expr (OK)
-Attempting to consume(RBRACKET) => success
 Enter exprPostfixPrim
 Attempting to consume(LBRACKET) => found SEMICOLON
 Attempting to consume(DOT) => found SEMICOLON
-Exit exprPostfixPrim (OK)
 Exit exprPostfixPrim (OK)
 Exit exprPostfix (OK)
 Exit exprUnary (OK)
@@ -1138,6 +356,9 @@ Exit exprMulPrim (OK)
 Exit exprMul (OK)
 Enter exprAddPrim
 Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
 Attempting to consume(SUB) => found SEMICOLON
 Exit exprAddPrim (OK)
 Exit exprAdd (OK)
@@ -1167,140 +388,11 @@ Attempting to consume(NOT) => found ID
 Enter exprPostfix
 Enter exprPrimary
 Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found LBRACKET
+Attempting to consume(LPAR) => found SEMICOLON
 Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => success
-Enter expr
-Enter exprAssign
-Enter exprOr
-Enter exprAnd
-Enter exprEq
-Enter exprRel
-Enter exprAdd
-Enter exprMul
-Enter exprCast
-Attempting to consume(LPAR) => found ID
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found RBRACKET
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found RBRACKET
-Attempting to consume(DOT) => found RBRACKET
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Exit exprCast (OK)
-Enter exprMulPrim
-Attempting to consume(MUL) => found RBRACKET
-Attempting to consume(DIV) => found RBRACKET
-Exit exprMulPrim (OK)
-Exit exprMul (OK)
-Enter exprAddPrim
-Attempting to consume(ADD) => found RBRACKET
-Attempting to consume(SUB) => found RBRACKET
-Exit exprAddPrim (OK)
-Exit exprAdd (OK)
-Enter exprRelPrim
-Attempting to consume(LESS) => found RBRACKET
-Attempting to consume(LESSEQ) => found RBRACKET
-Attempting to consume(GREATER) => found RBRACKET
-Attempting to consume(GREATEREQ) => found RBRACKET
-Exit exprRelPrim (OK)
-Exit exprRel (OK)
-Enter exprEqPrim
-Attempting to consume(EQUAL) => found RBRACKET
-Attempting to consume(NOTEQ) => found RBRACKET
-Exit exprEqPrim (OK)
-Exit exprEq (OK)
-Enter exprAndPrim
-Attempting to consume(AND) => found RBRACKET
-Exit exprAndPrim (OK)
-Exit exprAnd (OK)
-Enter exprOrPrim
-Attempting to consume(OR) => found RBRACKET
-Exit exprOrPrim (OK)
-Exit exprOr (OK)
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found RBRACKET
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found RBRACKET
-Attempting to consume(DOT) => found RBRACKET
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Attempting to consume(ASSIGN) => found RBRACKET
-Enter exprOr
-Enter exprAnd
-Enter exprEq
-Enter exprRel
-Enter exprAdd
-Enter exprMul
-Enter exprCast
-Attempting to consume(LPAR) => found ID
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found RBRACKET
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found RBRACKET
-Attempting to consume(DOT) => found RBRACKET
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Exit exprCast (OK)
-Enter exprMulPrim
-Attempting to consume(MUL) => found RBRACKET
-Attempting to consume(DIV) => found RBRACKET
-Exit exprMulPrim (OK)
-Exit exprMul (OK)
-Enter exprAddPrim
-Attempting to consume(ADD) => found RBRACKET
-Attempting to consume(SUB) => found RBRACKET
-Exit exprAddPrim (OK)
-Exit exprAdd (OK)
-Enter exprRelPrim
-Attempting to consume(LESS) => found RBRACKET
-Attempting to consume(LESSEQ) => found RBRACKET
-Attempting to consume(GREATER) => found RBRACKET
-Attempting to consume(GREATEREQ) => found RBRACKET
-Exit exprRelPrim (OK)
-Exit exprRel (OK)
-Enter exprEqPrim
-Attempting to consume(EQUAL) => found RBRACKET
-Attempting to consume(NOTEQ) => found RBRACKET
-Exit exprEqPrim (OK)
-Exit exprEq (OK)
-Enter exprAndPrim
-Attempting to consume(AND) => found RBRACKET
-Exit exprAndPrim (OK)
-Exit exprAnd (OK)
-Enter exprOrPrim
-Attempting to consume(OR) => found RBRACKET
-Exit exprOrPrim (OK)
-Exit exprOr (OK)
-Exit exprAssign (OK)
-Exit expr (OK)
-Attempting to consume(RBRACKET) => success
 Enter exprPostfixPrim
 Attempting to consume(LBRACKET) => found SEMICOLON
 Attempting to consume(DOT) => found SEMICOLON
-Exit exprPostfixPrim (OK)
 Exit exprPostfixPrim (OK)
 Exit exprPostfix (OK)
 Exit exprUnary (OK)
@@ -1319,140 +411,11 @@ Attempting to consume(NOT) => found ID
 Enter exprPostfix
 Enter exprPrimary
 Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found LBRACKET
+Attempting to consume(LPAR) => found SEMICOLON
 Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => success
-Enter expr
-Enter exprAssign
-Enter exprOr
-Enter exprAnd
-Enter exprEq
-Enter exprRel
-Enter exprAdd
-Enter exprMul
-Enter exprCast
-Attempting to consume(LPAR) => found ID
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found RBRACKET
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found RBRACKET
-Attempting to consume(DOT) => found RBRACKET
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Exit exprCast (OK)
-Enter exprMulPrim
-Attempting to consume(MUL) => found RBRACKET
-Attempting to consume(DIV) => found RBRACKET
-Exit exprMulPrim (OK)
-Exit exprMul (OK)
-Enter exprAddPrim
-Attempting to consume(ADD) => found RBRACKET
-Attempting to consume(SUB) => found RBRACKET
-Exit exprAddPrim (OK)
-Exit exprAdd (OK)
-Enter exprRelPrim
-Attempting to consume(LESS) => found RBRACKET
-Attempting to consume(LESSEQ) => found RBRACKET
-Attempting to consume(GREATER) => found RBRACKET
-Attempting to consume(GREATEREQ) => found RBRACKET
-Exit exprRelPrim (OK)
-Exit exprRel (OK)
-Enter exprEqPrim
-Attempting to consume(EQUAL) => found RBRACKET
-Attempting to consume(NOTEQ) => found RBRACKET
-Exit exprEqPrim (OK)
-Exit exprEq (OK)
-Enter exprAndPrim
-Attempting to consume(AND) => found RBRACKET
-Exit exprAndPrim (OK)
-Exit exprAnd (OK)
-Enter exprOrPrim
-Attempting to consume(OR) => found RBRACKET
-Exit exprOrPrim (OK)
-Exit exprOr (OK)
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found RBRACKET
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found RBRACKET
-Attempting to consume(DOT) => found RBRACKET
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Attempting to consume(ASSIGN) => found RBRACKET
-Enter exprOr
-Enter exprAnd
-Enter exprEq
-Enter exprRel
-Enter exprAdd
-Enter exprMul
-Enter exprCast
-Attempting to consume(LPAR) => found ID
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found RBRACKET
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found RBRACKET
-Attempting to consume(DOT) => found RBRACKET
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Exit exprCast (OK)
-Enter exprMulPrim
-Attempting to consume(MUL) => found RBRACKET
-Attempting to consume(DIV) => found RBRACKET
-Exit exprMulPrim (OK)
-Exit exprMul (OK)
-Enter exprAddPrim
-Attempting to consume(ADD) => found RBRACKET
-Attempting to consume(SUB) => found RBRACKET
-Exit exprAddPrim (OK)
-Exit exprAdd (OK)
-Enter exprRelPrim
-Attempting to consume(LESS) => found RBRACKET
-Attempting to consume(LESSEQ) => found RBRACKET
-Attempting to consume(GREATER) => found RBRACKET
-Attempting to consume(GREATEREQ) => found RBRACKET
-Exit exprRelPrim (OK)
-Exit exprRel (OK)
-Enter exprEqPrim
-Attempting to consume(EQUAL) => found RBRACKET
-Attempting to consume(NOTEQ) => found RBRACKET
-Exit exprEqPrim (OK)
-Exit exprEq (OK)
-Enter exprAndPrim
-Attempting to consume(AND) => found RBRACKET
-Exit exprAndPrim (OK)
-Exit exprAnd (OK)
-Enter exprOrPrim
-Attempting to consume(OR) => found RBRACKET
-Exit exprOrPrim (OK)
-Exit exprOr (OK)
-Exit exprAssign (OK)
-Exit expr (OK)
-Attempting to consume(RBRACKET) => success
 Enter exprPostfixPrim
 Attempting to consume(LBRACKET) => found SEMICOLON
 Attempting to consume(DOT) => found SEMICOLON
-Exit exprPostfixPrim (OK)
 Exit exprPostfixPrim (OK)
 Exit exprPostfix (OK)
 Exit exprUnary (OK)
@@ -1464,6 +427,9 @@ Exit exprMulPrim (OK)
 Exit exprMul (OK)
 Enter exprAddPrim
 Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
 Attempting to consume(SUB) => found SEMICOLON
 Exit exprAddPrim (OK)
 Exit exprAdd (OK)
@@ -1488,25 +454,17 @@ Attempting to consume(OR) => found SEMICOLON
 Exit exprOrPrim (OK)
 Exit exprOr (OK)
 Exit exprAssign (OK)
-Exit exprAssign (OK)
 Exit expr (OK)
 Attempting to consume(SEMICOLON) => success
 Exit stm (OK)
-Enter varDef
-Enter typeBase
-Attempting to consume(TYPE_INT) => found ID
-Attempting to consume(TYPE_DOUBLE) => found ID
-Attempting to consume(TYPE_CHAR) => found ID
-Attempting to consume(STRUCT) => found ID
-Exit typeBase (FAIL)
-Exit varDef (FAIL)
+Attempting to consume(ELSE) => success
 Enter stm
 Enter stmCompound
-Attempting to consume(LACC) => found ID
+Attempting to consume(LACC) => found RETURN
 Exit stmCompound (FAIL)
-Attempting to consume(IF) => found ID
-Attempting to consume(WHILE) => found ID
-Attempting to consume(RETURN) => found ID
+Attempting to consume(IF) => found RETURN
+Attempting to consume(WHILE) => found RETURN
+Attempting to consume(RETURN) => success
 Enter expr
 Enter exprAssign
 Enter exprOr
@@ -1514,100 +472,6 @@ Enter exprAnd
 Enter exprEq
 Enter exprRel
 Enter exprAdd
-Enter exprMul
-Enter exprCast
-Attempting to consume(LPAR) => found ID
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found ASSIGN
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found ASSIGN
-Attempting to consume(DOT) => found ASSIGN
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Exit exprCast (OK)
-Enter exprMulPrim
-Attempting to consume(MUL) => found ASSIGN
-Attempting to consume(DIV) => found ASSIGN
-Exit exprMulPrim (OK)
-Exit exprMul (OK)
-Enter exprAddPrim
-Attempting to consume(ADD) => found ASSIGN
-Attempting to consume(SUB) => found ASSIGN
-Exit exprAddPrim (OK)
-Exit exprAdd (OK)
-Enter exprRelPrim
-Attempting to consume(LESS) => found ASSIGN
-Attempting to consume(LESSEQ) => found ASSIGN
-Attempting to consume(GREATER) => found ASSIGN
-Attempting to consume(GREATEREQ) => found ASSIGN
-Exit exprRelPrim (OK)
-Exit exprRel (OK)
-Enter exprEqPrim
-Attempting to consume(EQUAL) => found ASSIGN
-Attempting to consume(NOTEQ) => found ASSIGN
-Exit exprEqPrim (OK)
-Exit exprEq (OK)
-Enter exprAndPrim
-Attempting to consume(AND) => found ASSIGN
-Exit exprAndPrim (OK)
-Exit exprAnd (OK)
-Enter exprOrPrim
-Attempting to consume(OR) => found ASSIGN
-Exit exprOrPrim (OK)
-Exit exprOr (OK)
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found ASSIGN
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found ASSIGN
-Attempting to consume(DOT) => found ASSIGN
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Attempting to consume(ASSIGN) => success
-Enter exprAssign
-Enter exprOr
-Enter exprAnd
-Enter exprEq
-Enter exprRel
-Enter exprAdd
-Enter exprMul
-Enter exprCast
-Attempting to consume(LPAR) => found ID
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found ADD
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found ADD
-Attempting to consume(DOT) => found ADD
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Exit exprCast (OK)
-Enter exprMulPrim
-Attempting to consume(MUL) => found ADD
-Attempting to consume(DIV) => found ADD
-Exit exprMulPrim (OK)
-Exit exprMul (OK)
-Enter exprAddPrim
-Attempting to consume(ADD) => success
 Enter exprMul
 Enter exprCast
 Attempting to consume(LPAR) => found ID
@@ -1634,7 +498,9 @@ Exit exprMul (OK)
 Enter exprAddPrim
 Attempting to consume(ADD) => found SEMICOLON
 Attempting to consume(SUB) => found SEMICOLON
-Exit exprAddPrim (OK)
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
 Exit exprAddPrim (OK)
 Exit exprAdd (OK)
 Enter exprRelPrim
@@ -1663,45 +529,20 @@ Attempting to consume(NOT) => found ID
 Enter exprPostfix
 Enter exprPrimary
 Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found ADD
+Attempting to consume(LPAR) => found SEMICOLON
 Exit exprPrimary (OK)
 Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found ADD
-Attempting to consume(DOT) => found ADD
+Attempting to consume(LBRACKET) => found SEMICOLON
+Attempting to consume(DOT) => found SEMICOLON
 Exit exprPostfixPrim (OK)
 Exit exprPostfix (OK)
 Exit exprUnary (OK)
-Attempting to consume(ASSIGN) => found ADD
+Attempting to consume(ASSIGN) => found SEMICOLON
 Enter exprOr
 Enter exprAnd
 Enter exprEq
 Enter exprRel
 Enter exprAdd
-Enter exprMul
-Enter exprCast
-Attempting to consume(LPAR) => found ID
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found ADD
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found ADD
-Attempting to consume(DOT) => found ADD
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Exit exprCast (OK)
-Enter exprMulPrim
-Attempting to consume(MUL) => found ADD
-Attempting to consume(DIV) => found ADD
-Exit exprMulPrim (OK)
-Exit exprMul (OK)
-Enter exprAddPrim
-Attempting to consume(ADD) => success
 Enter exprMul
 Enter exprCast
 Attempting to consume(LPAR) => found ID
@@ -1728,7 +569,9 @@ Exit exprMul (OK)
 Enter exprAddPrim
 Attempting to consume(ADD) => found SEMICOLON
 Attempting to consume(SUB) => found SEMICOLON
-Exit exprAddPrim (OK)
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
 Exit exprAddPrim (OK)
 Exit exprAdd (OK)
 Enter exprRelPrim
@@ -1751,274 +594,10 @@ Enter exprOrPrim
 Attempting to consume(OR) => found SEMICOLON
 Exit exprOrPrim (OK)
 Exit exprOr (OK)
-Exit exprAssign (OK)
 Exit exprAssign (OK)
 Exit expr (OK)
 Attempting to consume(SEMICOLON) => success
 Exit stm (OK)
-Enter varDef
-Enter typeBase
-Attempting to consume(TYPE_INT) => found ID
-Attempting to consume(TYPE_DOUBLE) => found ID
-Attempting to consume(TYPE_CHAR) => found ID
-Attempting to consume(STRUCT) => found ID
-Exit typeBase (FAIL)
-Exit varDef (FAIL)
-Enter stm
-Enter stmCompound
-Attempting to consume(LACC) => found ID
-Exit stmCompound (FAIL)
-Attempting to consume(IF) => found ID
-Attempting to consume(WHILE) => found ID
-Attempting to consume(RETURN) => found ID
-Enter expr
-Enter exprAssign
-Enter exprOr
-Enter exprAnd
-Enter exprEq
-Enter exprRel
-Enter exprAdd
-Enter exprMul
-Enter exprCast
-Attempting to consume(LPAR) => found ID
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found ASSIGN
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found ASSIGN
-Attempting to consume(DOT) => found ASSIGN
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Exit exprCast (OK)
-Enter exprMulPrim
-Attempting to consume(MUL) => found ASSIGN
-Attempting to consume(DIV) => found ASSIGN
-Exit exprMulPrim (OK)
-Exit exprMul (OK)
-Enter exprAddPrim
-Attempting to consume(ADD) => found ASSIGN
-Attempting to consume(SUB) => found ASSIGN
-Exit exprAddPrim (OK)
-Exit exprAdd (OK)
-Enter exprRelPrim
-Attempting to consume(LESS) => found ASSIGN
-Attempting to consume(LESSEQ) => found ASSIGN
-Attempting to consume(GREATER) => found ASSIGN
-Attempting to consume(GREATEREQ) => found ASSIGN
-Exit exprRelPrim (OK)
-Exit exprRel (OK)
-Enter exprEqPrim
-Attempting to consume(EQUAL) => found ASSIGN
-Attempting to consume(NOTEQ) => found ASSIGN
-Exit exprEqPrim (OK)
-Exit exprEq (OK)
-Enter exprAndPrim
-Attempting to consume(AND) => found ASSIGN
-Exit exprAndPrim (OK)
-Exit exprAnd (OK)
-Enter exprOrPrim
-Attempting to consume(OR) => found ASSIGN
-Exit exprOrPrim (OK)
-Exit exprOr (OK)
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found ASSIGN
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found ASSIGN
-Attempting to consume(DOT) => found ASSIGN
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Attempting to consume(ASSIGN) => success
-Enter exprAssign
-Enter exprOr
-Enter exprAnd
-Enter exprEq
-Enter exprRel
-Enter exprAdd
-Enter exprMul
-Enter exprCast
-Attempting to consume(LPAR) => found ID
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found ADD
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found ADD
-Attempting to consume(DOT) => found ADD
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Exit exprCast (OK)
-Enter exprMulPrim
-Attempting to consume(MUL) => found ADD
-Attempting to consume(DIV) => found ADD
-Exit exprMulPrim (OK)
-Exit exprMul (OK)
-Enter exprAddPrim
-Attempting to consume(ADD) => success
-Enter exprMul
-Enter exprCast
-Attempting to consume(LPAR) => found INT
-Enter exprUnary
-Attempting to consume(SUB) => found INT
-Attempting to consume(NOT) => found INT
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => found INT
-Attempting to consume(INT) => success
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found SEMICOLON
-Attempting to consume(DOT) => found SEMICOLON
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Exit exprCast (OK)
-Enter exprMulPrim
-Attempting to consume(MUL) => found SEMICOLON
-Attempting to consume(DIV) => found SEMICOLON
-Exit exprMulPrim (OK)
-Exit exprMul (OK)
-Enter exprAddPrim
-Attempting to consume(ADD) => found SEMICOLON
-Attempting to consume(SUB) => found SEMICOLON
-Exit exprAddPrim (OK)
-Exit exprAddPrim (OK)
-Exit exprAdd (OK)
-Enter exprRelPrim
-Attempting to consume(LESS) => found SEMICOLON
-Attempting to consume(LESSEQ) => found SEMICOLON
-Attempting to consume(GREATER) => found SEMICOLON
-Attempting to consume(GREATEREQ) => found SEMICOLON
-Exit exprRelPrim (OK)
-Exit exprRel (OK)
-Enter exprEqPrim
-Attempting to consume(EQUAL) => found SEMICOLON
-Attempting to consume(NOTEQ) => found SEMICOLON
-Exit exprEqPrim (OK)
-Exit exprEq (OK)
-Enter exprAndPrim
-Attempting to consume(AND) => found SEMICOLON
-Exit exprAndPrim (OK)
-Exit exprAnd (OK)
-Enter exprOrPrim
-Attempting to consume(OR) => found SEMICOLON
-Exit exprOrPrim (OK)
-Exit exprOr (OK)
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found ADD
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found ADD
-Attempting to consume(DOT) => found ADD
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Attempting to consume(ASSIGN) => found ADD
-Enter exprOr
-Enter exprAnd
-Enter exprEq
-Enter exprRel
-Enter exprAdd
-Enter exprMul
-Enter exprCast
-Attempting to consume(LPAR) => found ID
-Enter exprUnary
-Attempting to consume(SUB) => found ID
-Attempting to consume(NOT) => found ID
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found ADD
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found ADD
-Attempting to consume(DOT) => found ADD
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Exit exprCast (OK)
-Enter exprMulPrim
-Attempting to consume(MUL) => found ADD
-Attempting to consume(DIV) => found ADD
-Exit exprMulPrim (OK)
-Exit exprMul (OK)
-Enter exprAddPrim
-Attempting to consume(ADD) => success
-Enter exprMul
-Enter exprCast
-Attempting to consume(LPAR) => found INT
-Enter exprUnary
-Attempting to consume(SUB) => found INT
-Attempting to consume(NOT) => found INT
-Enter exprPostfix
-Enter exprPrimary
-Attempting to consume(ID) => found INT
-Attempting to consume(INT) => success
-Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found SEMICOLON
-Attempting to consume(DOT) => found SEMICOLON
-Exit exprPostfixPrim (OK)
-Exit exprPostfix (OK)
-Exit exprUnary (OK)
-Exit exprCast (OK)
-Enter exprMulPrim
-Attempting to consume(MUL) => found SEMICOLON
-Attempting to consume(DIV) => found SEMICOLON
-Exit exprMulPrim (OK)
-Exit exprMul (OK)
-Enter exprAddPrim
-Attempting to consume(ADD) => found SEMICOLON
-Attempting to consume(SUB) => found SEMICOLON
-Exit exprAddPrim (OK)
-Exit exprAddPrim (OK)
-Exit exprAdd (OK)
-Enter exprRelPrim
-Attempting to consume(LESS) => found SEMICOLON
-Attempting to consume(LESSEQ) => found SEMICOLON
-Attempting to consume(GREATER) => found SEMICOLON
-Attempting to consume(GREATEREQ) => found SEMICOLON
-Exit exprRelPrim (OK)
-Exit exprRel (OK)
-Enter exprEqPrim
-Attempting to consume(EQUAL) => found SEMICOLON
-Attempting to consume(NOTEQ) => found SEMICOLON
-Exit exprEqPrim (OK)
-Exit exprEq (OK)
-Enter exprAndPrim
-Attempting to consume(AND) => found SEMICOLON
-Exit exprAndPrim (OK)
-Exit exprAnd (OK)
-Enter exprOrPrim
-Attempting to consume(OR) => found SEMICOLON
-Exit exprOrPrim (OK)
-Exit exprOr (OK)
-Exit exprAssign (OK)
-Exit exprAssign (OK)
-Exit expr (OK)
-Attempting to consume(SEMICOLON) => success
 Exit stm (OK)
 Enter varDef
 Enter typeBase
@@ -2101,6 +680,1026 @@ Attempting to consume(SEMICOLON) => found RACC
 Exit stm (FAIL)
 Attempting to consume(RACC) => success
 Exit stmCompound (OK)
+Exit fnDef (OK)
+Enter structDef
+Attempting to consume(STRUCT) => found TYPE_INT
+Exit structDef (FAIL)
+Enter fnDef
+Enter typeBase
+Attempting to consume(TYPE_INT) => success
+Exit typeBase (OK)
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => success
+Enter fnParam
+Enter typeBase
+Attempting to consume(TYPE_INT) => found TYPE_CHAR
+Attempting to consume(TYPE_DOUBLE) => found TYPE_CHAR
+Attempting to consume(TYPE_CHAR) => success
+Exit typeBase (OK)
+Attempting to consume(ID) => success
+Enter arrayDecl
+Attempting to consume(LBRACKET) => success
+Attempting to consume(INT) => found RBRACKET
+Attempting to consume(RBRACKET) => success
+Exit arrayDecl (OK)
+Exit fnParam (OK)
+Attempting to consume(COMMA) => found RPAR
+Attempting to consume(RPAR) => success
+Enter stmCompound
+Attempting to consume(LACC) => success
+Enter varDef
+Enter typeBase
+Attempting to consume(TYPE_INT) => success
+Exit typeBase (OK)
+Attempting to consume(ID) => success
+Enter arrayDecl
+Attempting to consume(LBRACKET) => found SEMICOLON
+Exit arrayDecl (FAIL)
+Attempting to consume(SEMICOLON) => success
+Exit varDef (OK)
+Enter varDef
+Enter typeBase
+Attempting to consume(TYPE_INT) => found ID
+Attempting to consume(TYPE_DOUBLE) => found ID
+Attempting to consume(TYPE_CHAR) => found ID
+Attempting to consume(STRUCT) => found ID
+Exit typeBase (FAIL)
+Exit varDef (FAIL)
+Enter stm
+Enter stmCompound
+Attempting to consume(LACC) => found ID
+Exit stmCompound (FAIL)
+Attempting to consume(IF) => found ID
+Attempting to consume(WHILE) => found ID
+Attempting to consume(RETURN) => found ID
+Enter expr
+Enter exprAssign
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found ID
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found ASSIGN
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found ASSIGN
+Attempting to consume(DOT) => found ASSIGN
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found ASSIGN
+Attempting to consume(DIV) => found ASSIGN
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found ASSIGN
+Attempting to consume(SUB) => found ASSIGN
+Attempting to consume(ADD) => found ASSIGN
+Attempting to consume(SUB) => found ASSIGN
+Attempting to consume(SUB) => found ASSIGN
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found ASSIGN
+Attempting to consume(LESSEQ) => found ASSIGN
+Attempting to consume(GREATER) => found ASSIGN
+Attempting to consume(GREATEREQ) => found ASSIGN
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found ASSIGN
+Attempting to consume(NOTEQ) => found ASSIGN
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found ASSIGN
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found ASSIGN
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found ASSIGN
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found ASSIGN
+Attempting to consume(DOT) => found ASSIGN
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Attempting to consume(ASSIGN) => success
+Enter exprAssign
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found INT
+Enter exprUnary
+Attempting to consume(SUB) => found INT
+Attempting to consume(NOT) => found INT
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => found INT
+Attempting to consume(INT) => success
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found SEMICOLON
+Attempting to consume(DOT) => found SEMICOLON
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found SEMICOLON
+Attempting to consume(DIV) => found SEMICOLON
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found SEMICOLON
+Attempting to consume(LESSEQ) => found SEMICOLON
+Attempting to consume(GREATER) => found SEMICOLON
+Attempting to consume(GREATEREQ) => found SEMICOLON
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found SEMICOLON
+Attempting to consume(NOTEQ) => found SEMICOLON
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found SEMICOLON
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found SEMICOLON
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Enter exprUnary
+Attempting to consume(SUB) => found INT
+Attempting to consume(NOT) => found INT
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => found INT
+Attempting to consume(INT) => success
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found SEMICOLON
+Attempting to consume(DOT) => found SEMICOLON
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Attempting to consume(ASSIGN) => found SEMICOLON
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found INT
+Enter exprUnary
+Attempting to consume(SUB) => found INT
+Attempting to consume(NOT) => found INT
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => found INT
+Attempting to consume(INT) => success
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found SEMICOLON
+Attempting to consume(DOT) => found SEMICOLON
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found SEMICOLON
+Attempting to consume(DIV) => found SEMICOLON
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found SEMICOLON
+Attempting to consume(LESSEQ) => found SEMICOLON
+Attempting to consume(GREATER) => found SEMICOLON
+Attempting to consume(GREATEREQ) => found SEMICOLON
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found SEMICOLON
+Attempting to consume(NOTEQ) => found SEMICOLON
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found SEMICOLON
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found SEMICOLON
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Exit exprAssign (OK)
+Exit exprAssign (OK)
+Exit expr (OK)
+Attempting to consume(SEMICOLON) => success
+Exit stm (OK)
+Enter varDef
+Enter typeBase
+Attempting to consume(TYPE_INT) => found WHILE
+Attempting to consume(TYPE_DOUBLE) => found WHILE
+Attempting to consume(TYPE_CHAR) => found WHILE
+Attempting to consume(STRUCT) => found WHILE
+Exit typeBase (FAIL)
+Exit varDef (FAIL)
+Enter stm
+Enter stmCompound
+Attempting to consume(LACC) => found WHILE
+Exit stmCompound (FAIL)
+Attempting to consume(IF) => found WHILE
+Attempting to consume(WHILE) => success
+Attempting to consume(LPAR) => success
+Enter expr
+Enter exprAssign
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found ID
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found LBRACKET
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => success
+Enter expr
+Enter exprAssign
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found ID
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found RBRACKET
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found RBRACKET
+Attempting to consume(DOT) => found RBRACKET
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found RBRACKET
+Attempting to consume(DIV) => found RBRACKET
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found RBRACKET
+Attempting to consume(SUB) => found RBRACKET
+Attempting to consume(ADD) => found RBRACKET
+Attempting to consume(SUB) => found RBRACKET
+Attempting to consume(SUB) => found RBRACKET
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found RBRACKET
+Attempting to consume(LESSEQ) => found RBRACKET
+Attempting to consume(GREATER) => found RBRACKET
+Attempting to consume(GREATEREQ) => found RBRACKET
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found RBRACKET
+Attempting to consume(NOTEQ) => found RBRACKET
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found RBRACKET
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found RBRACKET
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found RBRACKET
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found RBRACKET
+Attempting to consume(DOT) => found RBRACKET
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Attempting to consume(ASSIGN) => found RBRACKET
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found ID
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found RBRACKET
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found RBRACKET
+Attempting to consume(DOT) => found RBRACKET
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found RBRACKET
+Attempting to consume(DIV) => found RBRACKET
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found RBRACKET
+Attempting to consume(SUB) => found RBRACKET
+Attempting to consume(ADD) => found RBRACKET
+Attempting to consume(SUB) => found RBRACKET
+Attempting to consume(SUB) => found RBRACKET
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found RBRACKET
+Attempting to consume(LESSEQ) => found RBRACKET
+Attempting to consume(GREATER) => found RBRACKET
+Attempting to consume(GREATEREQ) => found RBRACKET
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found RBRACKET
+Attempting to consume(NOTEQ) => found RBRACKET
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found RBRACKET
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found RBRACKET
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Exit exprAssign (OK)
+Exit expr (OK)
+Attempting to consume(RBRACKET) => success
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found RPAR
+Attempting to consume(DOT) => found RPAR
+Exit exprPostfixPrim (OK)
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found RPAR
+Attempting to consume(DIV) => found RPAR
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
+Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
+Attempting to consume(SUB) => found RPAR
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found RPAR
+Attempting to consume(LESSEQ) => found RPAR
+Attempting to consume(GREATER) => found RPAR
+Attempting to consume(GREATEREQ) => found RPAR
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found RPAR
+Attempting to consume(NOTEQ) => found RPAR
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found RPAR
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found RPAR
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found LBRACKET
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => success
+Enter expr
+Enter exprAssign
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found ID
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found RBRACKET
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found RBRACKET
+Attempting to consume(DOT) => found RBRACKET
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found RBRACKET
+Attempting to consume(DIV) => found RBRACKET
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found RBRACKET
+Attempting to consume(SUB) => found RBRACKET
+Attempting to consume(ADD) => found RBRACKET
+Attempting to consume(SUB) => found RBRACKET
+Attempting to consume(SUB) => found RBRACKET
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found RBRACKET
+Attempting to consume(LESSEQ) => found RBRACKET
+Attempting to consume(GREATER) => found RBRACKET
+Attempting to consume(GREATEREQ) => found RBRACKET
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found RBRACKET
+Attempting to consume(NOTEQ) => found RBRACKET
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found RBRACKET
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found RBRACKET
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found RBRACKET
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found RBRACKET
+Attempting to consume(DOT) => found RBRACKET
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Attempting to consume(ASSIGN) => found RBRACKET
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found ID
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found RBRACKET
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found RBRACKET
+Attempting to consume(DOT) => found RBRACKET
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found RBRACKET
+Attempting to consume(DIV) => found RBRACKET
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found RBRACKET
+Attempting to consume(SUB) => found RBRACKET
+Attempting to consume(ADD) => found RBRACKET
+Attempting to consume(SUB) => found RBRACKET
+Attempting to consume(SUB) => found RBRACKET
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found RBRACKET
+Attempting to consume(LESSEQ) => found RBRACKET
+Attempting to consume(GREATER) => found RBRACKET
+Attempting to consume(GREATEREQ) => found RBRACKET
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found RBRACKET
+Attempting to consume(NOTEQ) => found RBRACKET
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found RBRACKET
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found RBRACKET
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Exit exprAssign (OK)
+Exit expr (OK)
+Attempting to consume(RBRACKET) => success
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found RPAR
+Attempting to consume(DOT) => found RPAR
+Exit exprPostfixPrim (OK)
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Attempting to consume(ASSIGN) => found RPAR
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found ID
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found LBRACKET
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => success
+Enter expr
+Enter exprAssign
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found ID
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found RBRACKET
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found RBRACKET
+Attempting to consume(DOT) => found RBRACKET
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found RBRACKET
+Attempting to consume(DIV) => found RBRACKET
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found RBRACKET
+Attempting to consume(SUB) => found RBRACKET
+Attempting to consume(ADD) => found RBRACKET
+Attempting to consume(SUB) => found RBRACKET
+Attempting to consume(SUB) => found RBRACKET
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found RBRACKET
+Attempting to consume(LESSEQ) => found RBRACKET
+Attempting to consume(GREATER) => found RBRACKET
+Attempting to consume(GREATEREQ) => found RBRACKET
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found RBRACKET
+Attempting to consume(NOTEQ) => found RBRACKET
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found RBRACKET
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found RBRACKET
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found RBRACKET
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found RBRACKET
+Attempting to consume(DOT) => found RBRACKET
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Attempting to consume(ASSIGN) => found RBRACKET
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found ID
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found RBRACKET
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found RBRACKET
+Attempting to consume(DOT) => found RBRACKET
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found RBRACKET
+Attempting to consume(DIV) => found RBRACKET
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found RBRACKET
+Attempting to consume(SUB) => found RBRACKET
+Attempting to consume(ADD) => found RBRACKET
+Attempting to consume(SUB) => found RBRACKET
+Attempting to consume(SUB) => found RBRACKET
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found RBRACKET
+Attempting to consume(LESSEQ) => found RBRACKET
+Attempting to consume(GREATER) => found RBRACKET
+Attempting to consume(GREATEREQ) => found RBRACKET
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found RBRACKET
+Attempting to consume(NOTEQ) => found RBRACKET
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found RBRACKET
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found RBRACKET
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Exit exprAssign (OK)
+Exit expr (OK)
+Attempting to consume(RBRACKET) => success
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found RPAR
+Attempting to consume(DOT) => found RPAR
+Exit exprPostfixPrim (OK)
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found RPAR
+Attempting to consume(DIV) => found RPAR
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
+Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
+Attempting to consume(SUB) => found RPAR
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found RPAR
+Attempting to consume(LESSEQ) => found RPAR
+Attempting to consume(GREATER) => found RPAR
+Attempting to consume(GREATEREQ) => found RPAR
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found RPAR
+Attempting to consume(NOTEQ) => found RPAR
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found RPAR
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found RPAR
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Exit exprAssign (OK)
+Exit expr (OK)
+Attempting to consume(RPAR) => success
+Enter stm
+Enter stmCompound
+Attempting to consume(LACC) => found ID
+Exit stmCompound (FAIL)
+Attempting to consume(IF) => found ID
+Attempting to consume(WHILE) => found ID
+Attempting to consume(RETURN) => found ID
+Enter expr
+Enter exprAssign
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found ID
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found ASSIGN
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found ASSIGN
+Attempting to consume(DOT) => found ASSIGN
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found ASSIGN
+Attempting to consume(DIV) => found ASSIGN
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found ASSIGN
+Attempting to consume(SUB) => found ASSIGN
+Attempting to consume(ADD) => found ASSIGN
+Attempting to consume(SUB) => found ASSIGN
+Attempting to consume(SUB) => found ASSIGN
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found ASSIGN
+Attempting to consume(LESSEQ) => found ASSIGN
+Attempting to consume(GREATER) => found ASSIGN
+Attempting to consume(GREATEREQ) => found ASSIGN
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found ASSIGN
+Attempting to consume(NOTEQ) => found ASSIGN
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found ASSIGN
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found ASSIGN
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found ASSIGN
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found ASSIGN
+Attempting to consume(DOT) => found ASSIGN
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Attempting to consume(ASSIGN) => success
+Enter exprAssign
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found ID
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found ADD
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found ADD
+Attempting to consume(DOT) => found ADD
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found ADD
+Attempting to consume(DIV) => found ADD
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => success
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found SEMICOLON
+Attempting to consume(LESSEQ) => found SEMICOLON
+Attempting to consume(GREATER) => found SEMICOLON
+Attempting to consume(GREATEREQ) => found SEMICOLON
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found SEMICOLON
+Attempting to consume(NOTEQ) => found SEMICOLON
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found SEMICOLON
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found SEMICOLON
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found ADD
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found ADD
+Attempting to consume(DOT) => found ADD
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Attempting to consume(ASSIGN) => found ADD
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found ID
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found ADD
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found ADD
+Attempting to consume(DOT) => found ADD
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found ADD
+Attempting to consume(DIV) => found ADD
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => success
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found SEMICOLON
+Attempting to consume(LESSEQ) => found SEMICOLON
+Attempting to consume(GREATER) => found SEMICOLON
+Attempting to consume(GREATEREQ) => found SEMICOLON
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found SEMICOLON
+Attempting to consume(NOTEQ) => found SEMICOLON
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found SEMICOLON
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found SEMICOLON
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Exit exprAssign (OK)
+Exit exprAssign (OK)
+Exit expr (OK)
+Attempting to consume(SEMICOLON) => success
 Exit stm (OK)
 Exit stm (OK)
 Enter varDef
@@ -2150,6 +1749,9 @@ Exit exprMulPrim (OK)
 Exit exprMul (OK)
 Enter exprAddPrim
 Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
 Attempting to consume(SUB) => found SEMICOLON
 Exit exprAddPrim (OK)
 Exit exprAdd (OK)
@@ -2218,6 +1820,9 @@ Exit exprMulPrim (OK)
 Exit exprMul (OK)
 Enter exprAddPrim
 Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
 Attempting to consume(SUB) => found SEMICOLON
 Exit exprAddPrim (OK)
 Exit exprAdd (OK)
@@ -2342,19 +1947,482 @@ Attempting to consume(ID) => success
 Attempting to consume(LPAR) => success
 Enter fnParam
 Enter typeBase
-Attempting to consume(TYPE_INT) => found STRUCT
-Attempting to consume(TYPE_DOUBLE) => found STRUCT
-Attempting to consume(TYPE_CHAR) => found STRUCT
-Attempting to consume(STRUCT) => success
-Attempting to consume(ID) => success
+Attempting to consume(TYPE_INT) => found RPAR
+Attempting to consume(TYPE_DOUBLE) => found RPAR
+Attempting to consume(TYPE_CHAR) => found RPAR
+Attempting to consume(STRUCT) => found RPAR
+Exit typeBase (FAIL)
+Exit fnParam (FAIL)
+Attempting to consume(RPAR) => success
+Enter stmCompound
+Attempting to consume(LACC) => success
+Enter varDef
+Enter typeBase
+Attempting to consume(TYPE_INT) => success
 Exit typeBase (OK)
 Attempting to consume(ID) => success
 Enter arrayDecl
-Attempting to consume(LBRACKET) => found RPAR
+Attempting to consume(LBRACKET) => found SEMICOLON
 Exit arrayDecl (FAIL)
-Exit fnParam (OK)
-Attempting to consume(COMMA) => found RPAR
+Attempting to consume(SEMICOLON) => success
+Exit varDef (OK)
+Enter varDef
+Enter typeBase
+Attempting to consume(TYPE_INT) => found ID
+Attempting to consume(TYPE_DOUBLE) => found ID
+Attempting to consume(TYPE_CHAR) => found ID
+Attempting to consume(STRUCT) => found ID
+Exit typeBase (FAIL)
+Exit varDef (FAIL)
+Enter stm
+Enter stmCompound
+Attempting to consume(LACC) => found ID
+Exit stmCompound (FAIL)
+Attempting to consume(IF) => found ID
+Attempting to consume(WHILE) => found ID
+Attempting to consume(RETURN) => found ID
+Enter expr
+Enter exprAssign
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found ID
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found ASSIGN
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found ASSIGN
+Attempting to consume(DOT) => found ASSIGN
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found ASSIGN
+Attempting to consume(DIV) => found ASSIGN
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found ASSIGN
+Attempting to consume(SUB) => found ASSIGN
+Attempting to consume(ADD) => found ASSIGN
+Attempting to consume(SUB) => found ASSIGN
+Attempting to consume(SUB) => found ASSIGN
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found ASSIGN
+Attempting to consume(LESSEQ) => found ASSIGN
+Attempting to consume(GREATER) => found ASSIGN
+Attempting to consume(GREATEREQ) => found ASSIGN
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found ASSIGN
+Attempting to consume(NOTEQ) => found ASSIGN
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found ASSIGN
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found ASSIGN
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found ASSIGN
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found ASSIGN
+Attempting to consume(DOT) => found ASSIGN
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Attempting to consume(ASSIGN) => success
+Enter exprAssign
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found INT
+Enter exprUnary
+Attempting to consume(SUB) => found INT
+Attempting to consume(NOT) => found INT
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => found INT
+Attempting to consume(INT) => success
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found SEMICOLON
+Attempting to consume(DOT) => found SEMICOLON
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found SEMICOLON
+Attempting to consume(DIV) => found SEMICOLON
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found SEMICOLON
+Attempting to consume(LESSEQ) => found SEMICOLON
+Attempting to consume(GREATER) => found SEMICOLON
+Attempting to consume(GREATEREQ) => found SEMICOLON
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found SEMICOLON
+Attempting to consume(NOTEQ) => found SEMICOLON
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found SEMICOLON
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found SEMICOLON
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Enter exprUnary
+Attempting to consume(SUB) => found INT
+Attempting to consume(NOT) => found INT
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => found INT
+Attempting to consume(INT) => success
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found SEMICOLON
+Attempting to consume(DOT) => found SEMICOLON
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Attempting to consume(ASSIGN) => found SEMICOLON
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found INT
+Enter exprUnary
+Attempting to consume(SUB) => found INT
+Attempting to consume(NOT) => found INT
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => found INT
+Attempting to consume(INT) => success
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found SEMICOLON
+Attempting to consume(DOT) => found SEMICOLON
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found SEMICOLON
+Attempting to consume(DIV) => found SEMICOLON
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found SEMICOLON
+Attempting to consume(LESSEQ) => found SEMICOLON
+Attempting to consume(GREATER) => found SEMICOLON
+Attempting to consume(GREATEREQ) => found SEMICOLON
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found SEMICOLON
+Attempting to consume(NOTEQ) => found SEMICOLON
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found SEMICOLON
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found SEMICOLON
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Exit exprAssign (OK)
+Exit exprAssign (OK)
+Exit expr (OK)
+Attempting to consume(SEMICOLON) => success
+Exit stm (OK)
+Enter varDef
+Enter typeBase
+Attempting to consume(TYPE_INT) => found WHILE
+Attempting to consume(TYPE_DOUBLE) => found WHILE
+Attempting to consume(TYPE_CHAR) => found WHILE
+Attempting to consume(STRUCT) => found WHILE
+Exit typeBase (FAIL)
+Exit varDef (FAIL)
+Enter stm
+Enter stmCompound
+Attempting to consume(LACC) => found WHILE
+Exit stmCompound (FAIL)
+Attempting to consume(IF) => found WHILE
+Attempting to consume(WHILE) => success
+Attempting to consume(LPAR) => success
+Enter expr
+Enter exprAssign
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found ID
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found NOTEQ
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found NOTEQ
+Attempting to consume(DOT) => found NOTEQ
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found NOTEQ
+Attempting to consume(DIV) => found NOTEQ
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found NOTEQ
+Attempting to consume(SUB) => found NOTEQ
+Attempting to consume(ADD) => found NOTEQ
+Attempting to consume(SUB) => found NOTEQ
+Attempting to consume(SUB) => found NOTEQ
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found NOTEQ
+Attempting to consume(LESSEQ) => found NOTEQ
+Attempting to consume(GREATER) => found NOTEQ
+Attempting to consume(GREATEREQ) => found NOTEQ
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found NOTEQ
+Attempting to consume(NOTEQ) => success
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found INT
+Enter exprUnary
+Attempting to consume(SUB) => found INT
+Attempting to consume(NOT) => found INT
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => found INT
+Attempting to consume(INT) => success
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found RPAR
+Attempting to consume(DOT) => found RPAR
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found RPAR
+Attempting to consume(DIV) => found RPAR
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
+Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
+Attempting to consume(SUB) => found RPAR
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found RPAR
+Attempting to consume(LESSEQ) => found RPAR
+Attempting to consume(GREATER) => found RPAR
+Attempting to consume(GREATEREQ) => found RPAR
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found RPAR
+Attempting to consume(NOTEQ) => found RPAR
+Exit exprEqPrim (OK)
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found RPAR
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found RPAR
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found NOTEQ
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found NOTEQ
+Attempting to consume(DOT) => found NOTEQ
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Attempting to consume(ASSIGN) => found NOTEQ
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found ID
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found NOTEQ
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found NOTEQ
+Attempting to consume(DOT) => found NOTEQ
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found NOTEQ
+Attempting to consume(DIV) => found NOTEQ
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found NOTEQ
+Attempting to consume(SUB) => found NOTEQ
+Attempting to consume(ADD) => found NOTEQ
+Attempting to consume(SUB) => found NOTEQ
+Attempting to consume(SUB) => found NOTEQ
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found NOTEQ
+Attempting to consume(LESSEQ) => found NOTEQ
+Attempting to consume(GREATER) => found NOTEQ
+Attempting to consume(GREATEREQ) => found NOTEQ
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found NOTEQ
+Attempting to consume(NOTEQ) => success
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found INT
+Enter exprUnary
+Attempting to consume(SUB) => found INT
+Attempting to consume(NOT) => found INT
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => found INT
+Attempting to consume(INT) => success
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found RPAR
+Attempting to consume(DOT) => found RPAR
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found RPAR
+Attempting to consume(DIV) => found RPAR
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
+Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
+Attempting to consume(SUB) => found RPAR
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found RPAR
+Attempting to consume(LESSEQ) => found RPAR
+Attempting to consume(GREATER) => found RPAR
+Attempting to consume(GREATEREQ) => found RPAR
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found RPAR
+Attempting to consume(NOTEQ) => found RPAR
+Exit exprEqPrim (OK)
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found RPAR
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found RPAR
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Exit exprAssign (OK)
+Exit expr (OK)
 Attempting to consume(RPAR) => success
+Enter stm
 Enter stmCompound
 Attempting to consume(LACC) => success
 Enter varDef
@@ -2405,16 +2473,11 @@ Attempting to consume(NOT) => found ID
 Enter exprPostfix
 Enter exprPrimary
 Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found DOT
+Attempting to consume(LPAR) => found RPAR
 Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found DOT
-Attempting to consume(DOT) => success
-Attempting to consume(ID) => success
 Enter exprPostfixPrim
 Attempting to consume(LBRACKET) => found RPAR
 Attempting to consume(DOT) => found RPAR
-Exit exprPostfixPrim (OK)
 Exit exprPostfixPrim (OK)
 Exit exprPostfix (OK)
 Exit exprUnary (OK)
@@ -2426,6 +2489,9 @@ Exit exprMulPrim (OK)
 Exit exprMul (OK)
 Enter exprAddPrim
 Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
+Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
 Attempting to consume(SUB) => found RPAR
 Exit exprAddPrim (OK)
 Exit exprAdd (OK)
@@ -2455,16 +2521,11 @@ Attempting to consume(NOT) => found ID
 Enter exprPostfix
 Enter exprPrimary
 Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found DOT
+Attempting to consume(LPAR) => found RPAR
 Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found DOT
-Attempting to consume(DOT) => success
-Attempting to consume(ID) => success
 Enter exprPostfixPrim
 Attempting to consume(LBRACKET) => found RPAR
 Attempting to consume(DOT) => found RPAR
-Exit exprPostfixPrim (OK)
 Exit exprPostfixPrim (OK)
 Exit exprPostfix (OK)
 Exit exprUnary (OK)
@@ -2483,16 +2544,11 @@ Attempting to consume(NOT) => found ID
 Enter exprPostfix
 Enter exprPrimary
 Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found DOT
+Attempting to consume(LPAR) => found RPAR
 Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found DOT
-Attempting to consume(DOT) => success
-Attempting to consume(ID) => success
 Enter exprPostfixPrim
 Attempting to consume(LBRACKET) => found RPAR
 Attempting to consume(DOT) => found RPAR
-Exit exprPostfixPrim (OK)
 Exit exprPostfixPrim (OK)
 Exit exprPostfix (OK)
 Exit exprUnary (OK)
@@ -2504,6 +2560,9 @@ Exit exprMulPrim (OK)
 Exit exprMul (OK)
 Enter exprAddPrim
 Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
+Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
 Attempting to consume(SUB) => found RPAR
 Exit exprAddPrim (OK)
 Exit exprAdd (OK)
@@ -2546,6 +2605,9 @@ Exit exprMulPrim (OK)
 Exit exprMul (OK)
 Enter exprAddPrim
 Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
 Attempting to consume(SUB) => found SEMICOLON
 Exit exprAddPrim (OK)
 Exit exprAdd (OK)
@@ -2592,16 +2654,11 @@ Attempting to consume(NOT) => found ID
 Enter exprPostfix
 Enter exprPrimary
 Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found DOT
+Attempting to consume(LPAR) => found RPAR
 Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found DOT
-Attempting to consume(DOT) => success
-Attempting to consume(ID) => success
 Enter exprPostfixPrim
 Attempting to consume(LBRACKET) => found RPAR
 Attempting to consume(DOT) => found RPAR
-Exit exprPostfixPrim (OK)
 Exit exprPostfixPrim (OK)
 Exit exprPostfix (OK)
 Exit exprUnary (OK)
@@ -2613,6 +2670,9 @@ Exit exprMulPrim (OK)
 Exit exprMul (OK)
 Enter exprAddPrim
 Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
+Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
 Attempting to consume(SUB) => found RPAR
 Exit exprAddPrim (OK)
 Exit exprAdd (OK)
@@ -2642,16 +2702,11 @@ Attempting to consume(NOT) => found ID
 Enter exprPostfix
 Enter exprPrimary
 Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found DOT
+Attempting to consume(LPAR) => found RPAR
 Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found DOT
-Attempting to consume(DOT) => success
-Attempting to consume(ID) => success
 Enter exprPostfixPrim
 Attempting to consume(LBRACKET) => found RPAR
 Attempting to consume(DOT) => found RPAR
-Exit exprPostfixPrim (OK)
 Exit exprPostfixPrim (OK)
 Exit exprPostfix (OK)
 Exit exprUnary (OK)
@@ -2670,16 +2725,11 @@ Attempting to consume(NOT) => found ID
 Enter exprPostfix
 Enter exprPrimary
 Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found DOT
+Attempting to consume(LPAR) => found RPAR
 Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found DOT
-Attempting to consume(DOT) => success
-Attempting to consume(ID) => success
 Enter exprPostfixPrim
 Attempting to consume(LBRACKET) => found RPAR
 Attempting to consume(DOT) => found RPAR
-Exit exprPostfixPrim (OK)
 Exit exprPostfixPrim (OK)
 Exit exprPostfix (OK)
 Exit exprUnary (OK)
@@ -2691,6 +2741,9 @@ Exit exprMulPrim (OK)
 Exit exprMul (OK)
 Enter exprAddPrim
 Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
+Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
 Attempting to consume(SUB) => found RPAR
 Exit exprAddPrim (OK)
 Exit exprAdd (OK)
@@ -2757,16 +2810,11 @@ Attempting to consume(NOT) => found ID
 Enter exprPostfix
 Enter exprPrimary
 Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found DOT
+Attempting to consume(LPAR) => found RPAR
 Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found DOT
-Attempting to consume(DOT) => success
-Attempting to consume(ID) => success
 Enter exprPostfixPrim
 Attempting to consume(LBRACKET) => found RPAR
 Attempting to consume(DOT) => found RPAR
-Exit exprPostfixPrim (OK)
 Exit exprPostfixPrim (OK)
 Exit exprPostfix (OK)
 Exit exprUnary (OK)
@@ -2778,6 +2826,9 @@ Exit exprMulPrim (OK)
 Exit exprMul (OK)
 Enter exprAddPrim
 Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
+Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
 Attempting to consume(SUB) => found RPAR
 Exit exprAddPrim (OK)
 Exit exprAdd (OK)
@@ -2807,16 +2858,11 @@ Attempting to consume(NOT) => found ID
 Enter exprPostfix
 Enter exprPrimary
 Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found DOT
+Attempting to consume(LPAR) => found RPAR
 Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found DOT
-Attempting to consume(DOT) => success
-Attempting to consume(ID) => success
 Enter exprPostfixPrim
 Attempting to consume(LBRACKET) => found RPAR
 Attempting to consume(DOT) => found RPAR
-Exit exprPostfixPrim (OK)
 Exit exprPostfixPrim (OK)
 Exit exprPostfix (OK)
 Exit exprUnary (OK)
@@ -2835,16 +2881,11 @@ Attempting to consume(NOT) => found ID
 Enter exprPostfix
 Enter exprPrimary
 Attempting to consume(ID) => success
-Attempting to consume(LPAR) => found DOT
+Attempting to consume(LPAR) => found RPAR
 Exit exprPrimary (OK)
-Enter exprPostfixPrim
-Attempting to consume(LBRACKET) => found DOT
-Attempting to consume(DOT) => success
-Attempting to consume(ID) => success
 Enter exprPostfixPrim
 Attempting to consume(LBRACKET) => found RPAR
 Attempting to consume(DOT) => found RPAR
-Exit exprPostfixPrim (OK)
 Exit exprPostfixPrim (OK)
 Exit exprPostfix (OK)
 Exit exprUnary (OK)
@@ -2856,6 +2897,9 @@ Exit exprMulPrim (OK)
 Exit exprMul (OK)
 Enter exprAddPrim
 Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
+Attempting to consume(ADD) => found RPAR
+Attempting to consume(SUB) => found RPAR
 Attempting to consume(SUB) => found RPAR
 Exit exprAddPrim (OK)
 Exit exprAdd (OK)
@@ -2899,6 +2943,9 @@ Exit exprMul (OK)
 Enter exprAddPrim
 Attempting to consume(ADD) => found SEMICOLON
 Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
 Exit exprAddPrim (OK)
 Exit exprAdd (OK)
 Enter exprRelPrim
@@ -2924,6 +2971,352 @@ Exit exprOr (OK)
 Exit exprAssign (OK)
 Exit expr (OK)
 Attempting to consume(SEMICOLON) => success
+Exit stm (OK)
+Enter varDef
+Enter typeBase
+Attempting to consume(TYPE_INT) => found ID
+Attempting to consume(TYPE_DOUBLE) => found ID
+Attempting to consume(TYPE_CHAR) => found ID
+Attempting to consume(STRUCT) => found ID
+Exit typeBase (FAIL)
+Exit varDef (FAIL)
+Enter stm
+Enter stmCompound
+Attempting to consume(LACC) => found ID
+Exit stmCompound (FAIL)
+Attempting to consume(IF) => found ID
+Attempting to consume(WHILE) => found ID
+Attempting to consume(RETURN) => found ID
+Enter expr
+Enter exprAssign
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found ID
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found ASSIGN
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found ASSIGN
+Attempting to consume(DOT) => found ASSIGN
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found ASSIGN
+Attempting to consume(DIV) => found ASSIGN
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found ASSIGN
+Attempting to consume(SUB) => found ASSIGN
+Attempting to consume(ADD) => found ASSIGN
+Attempting to consume(SUB) => found ASSIGN
+Attempting to consume(SUB) => found ASSIGN
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found ASSIGN
+Attempting to consume(LESSEQ) => found ASSIGN
+Attempting to consume(GREATER) => found ASSIGN
+Attempting to consume(GREATEREQ) => found ASSIGN
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found ASSIGN
+Attempting to consume(NOTEQ) => found ASSIGN
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found ASSIGN
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found ASSIGN
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found ASSIGN
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found ASSIGN
+Attempting to consume(DOT) => found ASSIGN
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Attempting to consume(ASSIGN) => success
+Enter exprAssign
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found ID
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found DIV
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found DIV
+Attempting to consume(DOT) => found DIV
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found DIV
+Attempting to consume(DIV) => success
+Enter exprCast
+Attempting to consume(LPAR) => found INT
+Enter exprUnary
+Attempting to consume(SUB) => found INT
+Attempting to consume(NOT) => found INT
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => found INT
+Attempting to consume(INT) => success
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found SEMICOLON
+Attempting to consume(DOT) => found SEMICOLON
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found SEMICOLON
+Attempting to consume(DIV) => found SEMICOLON
+Exit exprMulPrim (OK)
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found SEMICOLON
+Attempting to consume(LESSEQ) => found SEMICOLON
+Attempting to consume(GREATER) => found SEMICOLON
+Attempting to consume(GREATEREQ) => found SEMICOLON
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found SEMICOLON
+Attempting to consume(NOTEQ) => found SEMICOLON
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found SEMICOLON
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found SEMICOLON
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found DIV
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found DIV
+Attempting to consume(DOT) => found DIV
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Attempting to consume(ASSIGN) => found DIV
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found ID
+Enter exprUnary
+Attempting to consume(SUB) => found ID
+Attempting to consume(NOT) => found ID
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => success
+Attempting to consume(LPAR) => found DIV
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found DIV
+Attempting to consume(DOT) => found DIV
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found DIV
+Attempting to consume(DIV) => success
+Enter exprCast
+Attempting to consume(LPAR) => found INT
+Enter exprUnary
+Attempting to consume(SUB) => found INT
+Attempting to consume(NOT) => found INT
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => found INT
+Attempting to consume(INT) => success
+Exit exprPrimary (OK)
+Enter exprPostfixPrim
+Attempting to consume(LBRACKET) => found SEMICOLON
+Attempting to consume(DOT) => found SEMICOLON
+Exit exprPostfixPrim (OK)
+Exit exprPostfix (OK)
+Exit exprUnary (OK)
+Exit exprCast (OK)
+Enter exprMulPrim
+Attempting to consume(MUL) => found SEMICOLON
+Attempting to consume(DIV) => found SEMICOLON
+Exit exprMulPrim (OK)
+Exit exprMulPrim (OK)
+Exit exprMul (OK)
+Enter exprAddPrim
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(ADD) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Attempting to consume(SUB) => found SEMICOLON
+Exit exprAddPrim (OK)
+Exit exprAdd (OK)
+Enter exprRelPrim
+Attempting to consume(LESS) => found SEMICOLON
+Attempting to consume(LESSEQ) => found SEMICOLON
+Attempting to consume(GREATER) => found SEMICOLON
+Attempting to consume(GREATEREQ) => found SEMICOLON
+Exit exprRelPrim (OK)
+Exit exprRel (OK)
+Enter exprEqPrim
+Attempting to consume(EQUAL) => found SEMICOLON
+Attempting to consume(NOTEQ) => found SEMICOLON
+Exit exprEqPrim (OK)
+Exit exprEq (OK)
+Enter exprAndPrim
+Attempting to consume(AND) => found SEMICOLON
+Exit exprAndPrim (OK)
+Exit exprAnd (OK)
+Enter exprOrPrim
+Attempting to consume(OR) => found SEMICOLON
+Exit exprOrPrim (OK)
+Exit exprOr (OK)
+Exit exprAssign (OK)
+Exit exprAssign (OK)
+Exit expr (OK)
+Attempting to consume(SEMICOLON) => success
+Exit stm (OK)
+Enter varDef
+Enter typeBase
+Attempting to consume(TYPE_INT) => found RACC
+Attempting to consume(TYPE_DOUBLE) => found RACC
+Attempting to consume(TYPE_CHAR) => found RACC
+Attempting to consume(STRUCT) => found RACC
+Exit typeBase (FAIL)
+Exit varDef (FAIL)
+Enter stm
+Enter stmCompound
+Attempting to consume(LACC) => found RACC
+Exit stmCompound (FAIL)
+Attempting to consume(IF) => found RACC
+Attempting to consume(WHILE) => found RACC
+Attempting to consume(RETURN) => found RACC
+Enter expr
+Enter exprAssign
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found RACC
+Enter exprUnary
+Attempting to consume(SUB) => found RACC
+Attempting to consume(NOT) => found RACC
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => found RACC
+Attempting to consume(INT) => found RACC
+Attempting to consume(DOUBLE) => found RACC
+Attempting to consume(CHAR) => found RACC
+Attempting to consume(STRING) => found RACC
+Attempting to consume(LPAR) => found RACC
+Exit exprPrimary (FAIL)
+Exit exprPostfix (FAIL)
+Exit exprUnary (FAIL)
+Exit exprCast (FAIL)
+Exit exprMul (FAIL)
+Exit exprAdd (FAIL)
+Exit exprRel (FAIL)
+Exit exprEq (FAIL)
+Exit exprAnd (FAIL)
+Exit exprOr (FAIL)
+Enter exprOr
+Enter exprAnd
+Enter exprEq
+Enter exprRel
+Enter exprAdd
+Enter exprMul
+Enter exprCast
+Attempting to consume(LPAR) => found RACC
+Enter exprUnary
+Attempting to consume(SUB) => found RACC
+Attempting to consume(NOT) => found RACC
+Enter exprPostfix
+Enter exprPrimary
+Attempting to consume(ID) => found RACC
+Attempting to consume(INT) => found RACC
+Attempting to consume(DOUBLE) => found RACC
+Attempting to consume(CHAR) => found RACC
+Attempting to consume(STRING) => found RACC
+Attempting to consume(LPAR) => found RACC
+Exit exprPrimary (FAIL)
+Exit exprPostfix (FAIL)
+Exit exprUnary (FAIL)
+Exit exprCast (FAIL)
+Exit exprMul (FAIL)
+Exit exprAdd (FAIL)
+Exit exprRel (FAIL)
+Exit exprEq (FAIL)
+Exit exprAnd (FAIL)
+Exit exprOr (FAIL)
+Exit exprAssign (FAIL)
+Exit expr (FAIL)
+Attempting to consume(SEMICOLON) => found RACC
+Exit stm (FAIL)
+Attempting to consume(RACC) => success
+Exit stmCompound (OK)
+Exit stm (OK)
 Exit stm (OK)
 Enter varDef
 Enter typeBase

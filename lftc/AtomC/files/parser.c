@@ -496,7 +496,6 @@ bool stmCompound(bool newDomain) {
 bool stm() {
     rule_start("stm");
     Token *start = iTk;
-
   
     if (stmCompound(true)) { 
         rule_end("stm", true);
@@ -725,15 +724,45 @@ bool exprRel() {
 // exprRelPrim: (LESS | LESSEQ | GREATER | GREATEREQ) exprAdd exprRelPrim | epsilon
 bool exprRelPrim() {
     rule_start("exprRelPrim");
-    bool consumedOp = consume(LESS) || consume(LESSEQ) || consume(GREATER) || consume(GREATEREQ);
-    if (consumedOp) {
+    // bool consumedOp = consume(LESS) || consume(LESSEQ) || consume(GREATER) || consume(GREATEREQ);
+    if (consume(LESS)) {
         if (exprAdd()) {
             if (exprRelPrim()) {
                 rule_end("exprRelPrim", true);
                 return true;
             }
         }
-        tkerr("invalid expression after relational operator (<, <=, >, >=)");
+        tkerr("invalid expression after <");
+        return false;
+    }
+    if (consume(LESSEQ)) {
+        if (exprAdd()) {
+            if (exprRelPrim()) {
+                rule_end("exprRelPrim", true);
+                return true;
+            }
+        }
+        tkerr("invalid expression after <=");
+        return false;
+    }
+    if (consume(GREATER)) {
+        if (exprAdd()) {
+            if (exprRelPrim()) {
+                rule_end("exprRelPrim", true);
+                return true;
+            }
+        }
+        tkerr("invalid expression after >");
+        return false;
+    }
+    if (consume(GREATEREQ)) {
+        if (exprAdd()) {
+            if (exprRelPrim()) {
+                rule_end("exprRelPrim", true);
+                return true;
+            }
+        }
+        tkerr("invalid expression after >=");
         return false;
     }
     rule_end("exprRelPrim", true);
@@ -759,7 +788,7 @@ bool exprAdd() {
 bool exprAddPrim() {
     rule_start("exprAddPrim");
     bool consumedOp = consume(ADD) || consume(SUB);
-    if (consumedOp) {
+    if (consume(ADD)) {
         if (exprMul()) {
             if (exprAddPrim()) {
                  rule_end("exprAddPrim", true);

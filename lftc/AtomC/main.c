@@ -26,7 +26,7 @@ char *getAbsolutePath(const char *relativePath)
 
 int main()
 {
-    const char *relativePath = "AtomC/files/tests/testad.c";
+    const char *relativePath = "AtomC/files/tests/testparser.c";
     char *fileName = getAbsolutePath(relativePath);
     if (fileName == NULL)
     {
