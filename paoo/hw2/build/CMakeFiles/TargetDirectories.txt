@@ -1,0 +1,3 @@
+/Users/razvybitea/Faculty-3rd-year/paoo/hw2/build/CMakeFiles/homework2.dir
+/Users/razvybitea/Faculty-3rd-year/paoo/hw2/build/CMakeFiles/edit_cache.dir
+/Users/razvybitea/Faculty-3rd-year/paoo/hw2/build/CMakeFiles/rebuild_cache.dir
