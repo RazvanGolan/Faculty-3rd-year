@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+experiment_results.csv
+experiment_summary.md
